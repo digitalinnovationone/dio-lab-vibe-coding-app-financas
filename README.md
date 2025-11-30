@@ -58,7 +58,7 @@ No app, isso significa:
 
 ```
 Interações com o Lovable:
-> Olá, criei um App de finanças pessoas, com base no seguinte PRD (Product Requirements Document) {PRD}
+> Olá, crie um App de finanças pessoas, com base no seguinte PRD (Product Requirements Document) {PRD}
 > Ajuste no chatbot "Parece que o chat bot esta meio ilimitado, se possivel ajuste ele para ser tipo um agente de IA que define metas para nos e fazer pergutas como abrir o extrato. alem de ele ser possivel categorizar as transações."
 
 Resultado final do Lovable: https://chat-e-grana.lovable.app/
