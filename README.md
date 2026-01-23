@@ -172,7 +172,7 @@ Abaixo, imagens do conceito gerado durante o processo:
 ![Orçamento](LINK_DA_IMAGEM_3)
 
 ---
-##Link Proejto gerado na Lovable:
+##Link Projeto gerado na Lovable:
 https://simple-savings-chat.lovable.app
 
 ## Reflexão sobre o Processo
