@@ -1,5 +1,6 @@
-# Fluxo - Gestão Financeira com Linguagem Humana Este projeto foi desenvolvido como parte de um desafio de Bootcamp na [DIO](https://www.dio.me/)Criando um APP de Organização de Finanças Pessoais com Vibe Coding.
-O objetivo é criar o conceito de um App de Finanças Pessoais utilizando IA generativa para acelerar o design e a documentação.
+# Fluxo - Gestão Financeira com Linguagem Humana Este projeto foi desenvolvido como parte de um desafio de Bootcamp-Caixa/Inteligencia Artificial na Prática -[DIO](https://www.dio.me/)
+Criando um APP de Organização de Finanças Pessoais com Vibe Coding.
+"O objetivo é criar o conceito de um App de Finanças Pessoais utilizando IA generativa para acelerar o design e a documentação."
 
 ## Conceito do App
 O **Fluxo** nasceu da necessidade de tornar o controle financeiro menos intimidador. Diferente de apps cheios de termos técnicos, o Fluxo utiliza **linguagem natural e amigável** para interagir com o usuário, focando em:
@@ -20,17 +21,20 @@ Para chegar ao resultado final do PRD e do conceito visual, utilizei uma abordag
 ### 2. Prompt Final Estruturado (O "Coração" do Projeto)
 Este foi o prompt consolidado que gerou a documentação técnica e os requisitos que você vê neste repositório:
 
-Product Requirements Document (PRD) – App de Finanças Pessoais
+###Product Requirements Document (PRD) – App de Finanças Pessoais
 Data: 23 de janeiro de 2026 
 Versão: 1.0 
 Produto: App de Finanças Pessoais "Fluxo" 
 Autor: Lucimar Pereira dos Santos
+
 1. Visão Geral do Produto
+   
 ​​O aplicativo "Fluxo" é uma ferramenta de finanças pessoais projetada para capacitar os usuários a gerenciar seu dinheiro de forma intuitiva, sem a complexidade dos softwares financeiros tradicionais. Nosso objetivo é transformar o gerenciamento financeiro de uma tarefa árdua em uma experiência simples e até agradável, utilizando uma interface amigável e uma linguagem que se aproxima da conversação humana.
 
 Propósito: Simplificar o controle financeiro pessoal, promovendo a educação financeira e a tomada de decisões conscientes. Público-alvo: Indivíduos que buscam uma maneira fácil de monitorar gastos, planejar orçamentos e entender melhor sua saúde financeira, sem precisar ser um especialista.
 
 2. Metas do Produto
+   
 Engajamento: Aumentar a frequência de uso do aplicativo em 30% em 6 meses, refletindo o conforto do usuário com a ferramenta.
 
 Adoção: Alcançar 10.000 downloads e 5.000 usuários ativos mensais em 1 ano.
@@ -155,8 +159,6 @@ Verde claro (#90EE90) para ações e valores positivos
 Tipografia limpa, linguagem humana em português
 Animações suaves com framer-motion
 
-## Prompt Final (PRD) usado na IA
-Para gerar a estrutura do app no Lovable/Copilot, utilizei o seguinte PRD estruturado-gerado no Gemini:
 
 ## Interações e Visual do Projeto
 
@@ -165,8 +167,6 @@ Abaixo, imagens do conceito gerado durante o processo:
 dio-lab-vibe-coding-app-financas/images_app-Fluxo
 
 ---
-##Link Projeto gerado na Lovable:
-https://simple-savings-chat.lovable.app
 
 ## Reflexão sobre o Processo
 Durante o desenvolvimento deste desafio, aprendi que:
