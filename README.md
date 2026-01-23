@@ -162,14 +162,7 @@ Para gerar a estrutura do app no Lovable/Copilot, utilizei o seguinte PRD estrut
 
 Abaixo, imagens do conceito gerado durante o processo:
 
-### Dashboard Principal
-![Dashboard do App](LINK_DA_IMAGEM_2)
-
-### Registro de Gastos
-![Registro de Gastos](LINK_DA_IMAGEM_1)
-
-### Monitoramento de Orçamento
-![Orçamento](LINK_DA_IMAGEM_3)
+dio-lab-vibe-coding-app-financas/images_app-Fluxo
 
 ---
 ##Link Projeto gerado na Lovable:
