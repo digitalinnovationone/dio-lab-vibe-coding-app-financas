@@ -1,89 +1,179 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# Fluxo - Gestão Financeira com Linguagem Humana Este projeto foi desenvolvido como parte de um desafio de Bootcamp-Caixa/Inteligencia Artificial na Prática -[DIO](https://www.dio.me/)
+Criando um APP de Organização de Finanças Pessoais com Vibe Coding.
+"O objetivo é criar o conceito de um App de Finanças Pessoais utilizando IA generativa para acelerar o design e a documentação."
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+## Conceito do App
+O **Fluxo** nasceu da necessidade de tornar o controle financeiro menos intimidador. Diferente de apps cheios de termos técnicos, o Fluxo utiliza **linguagem natural e amigável** para interagir com o usuário, focando em:
+- **Simplicidade:** Interface limpa em Preto, Branco e LightGreen.
+- **Proximidade:** O app fala como um amigo ("Onde o seu dinheiro foi parar?").
+- **IA Assistiva:** Suporte integrado para tirar dúvidas financeiras básicas.
+- ---
+## 🛠️ Processo de Criação (Engenharia de Prompts)
+Prompt Inicial a gemini:
+"Agora preciso de um PRD par um app de "Finanças Pessoais"-a ideia central do app é que: 1.seja de facil usabilidade-2.Linguaguem que se aproxima da humana-3.Este PRD colocarei no Lovable-4.Deve ter imagens-5.As cores do app devem ser -preto-branco-lightgreen"
 
-## ✨ O que é Vibe Coding
+Para chegar ao resultado final do PRD e do conceito visual, utilizei uma abordagem de camadas com a IA, seguindo as instruções do desafio:
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+### 1. Instruções Iniciais (Input do Desafio)
+*O que foi solicitado à IA:*
+> "Criar um PRD para um app de Finanças Pessoais de fácil usabilidade, linguagem humana, cores preto/branco/lightgreen e focado para uso no Lovable."
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+### 2. Prompt Final Estruturado (O "Coração" do Projeto)
+Este foi o prompt consolidado que gerou a documentação técnica e os requisitos que você vê neste repositório:
 
-## 🎯 Desafio
+###Product Requirements Document (PRD) – App de Finanças Pessoais
+Data: 23 de janeiro de 2026 
+Versão: 1.0 
+Produto: App de Finanças Pessoais "Fluxo" 
+Autor: Lucimar Pereira dos Santos
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+1. Visão Geral do Produto
+   
+​​O aplicativo "Fluxo" é uma ferramenta de finanças pessoais projetada para capacitar os usuários a gerenciar seu dinheiro de forma intuitiva, sem a complexidade dos softwares financeiros tradicionais. Nosso objetivo é transformar o gerenciamento financeiro de uma tarefa árdua em uma experiência simples e até agradável, utilizando uma interface amigável e uma linguagem que se aproxima da conversação humana.
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+Propósito: Simplificar o controle financeiro pessoal, promovendo a educação financeira e a tomada de decisões conscientes. Público-alvo: Indivíduos que buscam uma maneira fácil de monitorar gastos, planejar orçamentos e entender melhor sua saúde financeira, sem precisar ser um especialista.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+2. Metas do Produto
+   
+Engajamento: Aumentar a frequência de uso do aplicativo em 30% em 6 meses, refletindo o conforto do usuário com a ferramenta.
 
-## 🪄 Etapas do Desafio
+Adoção: Alcançar 10.000 downloads e 5.000 usuários ativos mensais em 1 ano.
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+Satisfação do Usuário: Manter uma avaliação média de 4.5 estrelas na Google Play Store, com feedback positivo sobre a facilidade de uso e a clareza das informações.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+Consciência Financeira: Capacitar os usuários a identificar seus maiores gastos e economizar ativamente.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+3. Histórias de Usuário (User Stories)
+Como [tipo de usuário], eu quero [funcionalidade], para que eu possa [benefício].
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+Como um usuário iniciante, eu quero adicionar uma nova despesa rapidamente, para que eu possa registrar meus gastos sem interrupção.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+Como um usuário preocupado com o orçamento, eu quero ver um resumo visual dos meus gastos mensais, para que eu possa identificar onde estou gastando mais.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+Como um usuário que quer economizar, eu quero definir metas de orçamento para categorias específicas, para que eu possa controlar meus gastos e alcançar meus objetivos.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+Como um usuário que valoriza a privacidade, eu quero ter certeza de que meus dados financeiros estão seguros, para que eu possa usar o aplicativo com tranquilidade.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+Como um usuário que busca clareza, eu quero entender os termos financeiros em linguagem simples, para que eu possa aprender e gerenciar meu dinheiro sem confusão.
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+4. Requisitos Funcionais
+O aplicativo Fluxo oferecerá as seguintes funcionalidades principais:
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+4.1 Registro de Transações:
 
-### 2. Explorando o Lovable na Prática
+Adição manual de despesas e receitas.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Categorização intuitiva de transações (Ex: "Comida", "Transporte", "Lazer").
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Adição de notas e fotos (opcional) para cada transação.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+Edição e exclusão de transações.
 
-### 3. Entregando o Desafio na DIO
+Linguagem Humana: Frases como "O que você gastou hoje?" ou "Quanto entrou na sua conta?".
+4.2 Visão Geral (Dashboard):
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Exibição do saldo atual.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+Gráficos simples e coloridos mostrando gastos por categoria.
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+Resumo das últimas transações.
 
-## 💬 Conclusão
+Linguagem Humana: "Seu dinheiro no bolso", "Onde o seu dinheiro foi parar?".
+4.3 Orçamentos:
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+Criação de orçamentos mensais para diferentes categorias.
+
+Monitoramento do progresso em relação ao orçamento.
+
+Alertas quando o usuário se aproxima ou excede o orçamento.
+
+Linguagem Humana: "Quanto você quer gastar com...?", "Vamos segurar a mão aqui!".
+
+​4.4 Relatórios Simplificados:
+
+Relatórios visuais de fluxo de caixa (receitas vs. despesas).
+
+Histórico de gastos por categoria em diferentes períodos (semanal, mensal, anual).
+
+Linguagem Humana: "Para onde seu dinheiro foi neste mês?", "Como você se saiu no último trimestre?".
+
+4.5 Contas (Bancos/Carteira):
+
+Adição de múltiplas contas (dinheiro em espécie, conta corrente, poupança).
+
+Transferência entre contas.
+
+Linguagem Humana: "Seu dinheiro está aqui e ali", "Movimente seu capital".
+5. Requisitos Não Funcionais5.1 Usabilidade (UX/UI):Interface: Clara, intuitiva e mínima. Navegação com poucos cliques para as ações principais.Linguagem: Natural e conversacional, evitando termos financeiros complexos.Feedback: Respostas visuais e sonoras claras para as ações do usuário.
+
+5.2 Performance:Tempo de carregamento inicial menor que 3 segundos.Respostas instantâneas para interações do usuário (adição de transações, navegação).
+
+5.3 Segurança:Criptografia de ponta a ponta para dados financeiros.Autenticação biométrica (impressão digital/facial) opcional.Backup seguro dos dados na nuvem (opcional, com consentimento do usuário).
+
+5.4 Confiabilidade:Disponibilidade do serviço (99.9% de uptime para serviços de sincronização).Armazenamento de dados robusto e com redundância.
+
+5.5 Acessibilidade:Suporte a tamanhos de fonte dinâmicos.Modo de alto contraste (se aplicável, para daltonismo).
+
+5.6 Design (Cores):Primária: Preto (#000000) - Usado para textos principais, fundos escuros.Secundária: Branco (#FFFFFF) - Usado para fundos claros, textos em fundos escuros.Destaque/Ação: Light Green (#90EE90) - Usado para botões de ação, gráficos positivos, elementos interativos.Tipografia: Fonte limpa e legível (ex: Montserrat, Open Sans).
+
+6. Fluxos de Usuário Críticos6.1 Registro de Nova Transação:Usuário clica no botão "+" na Dashboard.Apresentado tela "Nova Transação" com opções "Despesa" ou "Receita".Usuário seleciona tipo e preenche valor, descrição e categoria.Usuário clica em "Salvar".Transação é adicionada e Dashboard atualizada.
+   
+6.2 Verificação de Orçamento:Usuário navega para a tela "Orçamentos".Visualiza barras de progresso para cada categoria.Recebe um alerta visual se uma categoria estiver próxima ou excedendo o limite.
+
+7. Requisitos Técnicos (Visão Geral)Plataforma: Android (desenvolvimento inicial), iOS (futuro).Linguagem de Desenvolvimento: Kotlin (Android).Backend: Firebase (Firestore para banco de dados, Authentication para usuários).APIs de Terceiros: (A definir, se houver integração bancária ou de investimentos).Testes: Testes unitários, de integração e de UI.
+
+ 8. Considerações Futuras (Roadmap)
+Sincronização bancária automática.
+
+Metas de poupança com acompanhamento.
+
+Módulo de investimentos simplificado.
+
+Modo "família" para gerenciamento compartilhado.
+
+Exportação de dados.
+
+9. Métricas de Sucesso
+MAU (Monthly Active Users): Número de usuários que abrem o app pelo menos uma vez por mês.
+
+DAU (Daily Active Users): Número de usuários que abrem o app pelo menos uma vez por dia.
+
+Transações Registradas: Média de transações por usuário por mês.
+
+Retenção: % de usuários que retornam após a primeira semana/mês.
+
+Avaliações na Loja: Média de estrelas e comentários.
+
+
+### Funcionalidades desta primeira versão:
+
+#Dashboard com saldo e gráficos de gastos
+Lista de transações recentes
+Adição rápida de despesas/receitas
+Orçamentos por categoria com barras de progresso
+Múltiplas contas
+Design:
+
+#Fundo escuro elegante com cards sutis
+Verde claro (#90EE90) para ações e valores positivos
+Tipografia limpa, linguagem humana em português
+Animações suaves com framer-motion
+
+
+## Interações e Visual do Projeto
+
+Abaixo, imagens do conceito gerado durante o processo:
+
+dio-lab-vibe-coding-app-financas/images_app-Fluxo
+
+---
+
+## Reflexão sobre o Processo
+Durante o desenvolvimento deste desafio, aprendi que:
+1. **Prompts são Especificações:** A clareza no texto (PRD) é o que define se a IA entregará um protótipo funcional ou algo genérico.
+2. **Design System:** Manter uma paleta restrita (Preto/Branco/LightGreen) facilita a consistência visual automática em ferramentas como o Lovable.
+3. **Agilidade:** O que levaria dias para documentar e prototipar manualmente, foi estruturado em minutos com o auxílio estratégico da IA.
+
+---
+ Desenvolvido por Lucimar Pereira dos Santos
+
