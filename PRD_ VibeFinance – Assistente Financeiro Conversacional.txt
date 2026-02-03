@@ -1,0 +1,335 @@
+📄 PRD: VibeFinance – Assistente Financeiro Conversacional
+
+1. SUMÁRIO EXECUTIVO
+
+O VibeFinance é um aplicativo móvel de finanças pessoais que redefine o controle financeiro através de uma interface conversacional intuitiva e um foco aprofundado no acompanhamento e otimização de investimentos. Nossa visão é simplificar a gestão financeira, eliminando a fricção da entrada manual de dados e oferecendo insights acionáveis sobre gastos e, principalmente, sobre a performance de investimentos.
+
+Visão do Produto e Proposta de Valor:
+O VibeFinance visa ser o assistente financeiro pessoal que o usuário realmente usa. Sua proposta de valor reside na combinação de uma experiência de usuário natural e sem esforço (via chat de texto e voz) para o registro de transações, com uma ferramenta robusta e visualmente clara para o acompanhamento da rentabilidade de investimentos. Ele transforma a tarefa árdua de controlar finanças em uma conversa simples e inteligente.
+
+Definição do Público-Alvo:
+Indivíduos tecnologicamente proficientes, com idade entre 25 e 45 anos, que possuem um conhecimento financeiro intermediário. Eles buscam controle sobre seus gastos e, crucialmente, desejam otimizar o desempenho de seus portfólios de investimento, mas são avessos a jargões complexos e interfaces tradicionais.
+
+Diferenciadores Chave:
+*   Input Conversacional Primário: A entrada de dados via chat (texto e voz) é a funcionalidade central, eliminando formulários e planilhos.
+*   Foco em Rentabilidade de Investimentos: Um módulo dedicado para rastrear a performance real de ativos, com base em posições históricas.
+*   Agente IA Reativo: Um assistente inteligente que oferece insights e recomendações personalizadas sob demanda.
+*   Simplicidade e Intuitividade: Design clean e linguagem acessível, tornando a gestão financeira menos intimidante.
+
+2. CONTEXTO E DECLARAÇÃO DO PROBLEMA
+
+Pontos de Dor Atuais em Aplicativos de Finanças Pessoais:
+A maioria dos aplicativos de finanças pessoais existentes falha em manter o engajamento do usuário devido a:
+*   Entrada Manual Excessiva: Exigem que o usuário preencha formulários detalhados para cada transação, o que é tedioso e propenso a erros.
+*   Pouca Personalização: Oferecem categorias genéricas e conselhos que não se aplicam à realidade individual do usuário.
+*   Complexidade de Configuração: A curva de aprendizado inicial é alta, com muitas regras e configurações que desmotivam o iniciante.
+*   Dificuldade no Acompanhamento de Investimentos: Muitos apps focam apenas em gastos, ou oferecem módulos de investimento superficiais, sem aprofundar na rentabilidade real e na análise de portfólio.
+
+Por Que Usuários Abandonam Soluções Tradicionais:
+Usuários desistem porque a manutenção diária se torna um fardo. A necessidade de guardar recibos, abrir o app do banco para consultar dados ou preencher planilhas complexas cria uma barreira significativa. A falta de resultados visíveis ou a sensação de que o app não "entende" suas necessidades leva à frustração e ao abandono.
+
+A Oportunidade para uma Abordagem Conversacional + Focada em Investimentos:
+Existe uma lacuna no mercado para uma solução que combine a facilidade de interação de um chat com a inteligência para gerenciar e otimizar investimentos. Ao remover a fricção da entrada de dados e oferecer insights financeiros relevantes, o VibeFinance pode transformar a experiência do usuário, tornando o controle financeiro algo natural, engajador e verdadeiramente útil para a construção de riqueza.
+
+3. PÚBLICO-ALVO (PERSONA)
+
+Demografia:
+*   Idade: 25 a 45 anos.
+*   Profissão: Profissionais de diversas áreas, com renda estável.
+*   Tecnologia: Tecnologicamente proficientes (tech-savvy), acostumados com interfaces digitais e comunicação via chat.
+
+Nível de Letramento Financeiro:
+*   Conhecimento: Médio. Entendem conceitos básicos como fluxo de caixa, receitas, despesas e a importância de investir, mas sem aprofundamento em jargões de mercado ou análises complexas.
+*   Atitude: Buscam aprender e melhorar suas finanças, mas preferem informações claras, diretas e sem complexidade desnecessária.
+
+Objetivos Primários:
+*   Controle de Gastos: Entender para onde o dinheiro está indo e identificar oportunidades de economia.
+*   Otimização de Portfólio de Investimentos: Acompanhar a rentabilidade de seus ativos, analisar o desempenho e buscar o mix ideal de investimentos dentro de seu perfil de risco.
+*   Poupança e Metas: Guardar dinheiro para objetivos específicos (viagem, casa, reserva de emergência).
+
+Traços Comportamentais e Dores:
+*   Aversão à Fricção: Desistem de apps que exigem muita entrada manual, preenchimento de formulários ou consulta constante a extratos bancários.
+*   Busca por Personalização: Querem que o aplicativo se adapte ao seu estilo de vida e ofereça recomendações financeiras que realmente façam sentido para sua realidade.
+*   Frustração com Complexidade: Sentem-se sobrecarregados por configurações iniciais complexas e regras de categorização rígidas.
+*   Necessidade de Simplicidade: Valorizam a praticidade e a facilidade de uso, preferindo uma experiência que se assemelhe a uma conversa natural.
+*   Desejo de Autonomia: Querem a capacidade de criar suas próprias categorias e regras de automação.
+
+4. ESCOPO DO MVP - FUNCIONALIDADES PRINCIPAIS
+
+4.1. MOTOR DE INPUT CONVERSACIONAL
+
+*   Registro de Transações via Chat:
+    *   Permite ao usuário registrar gastos e receitas em linguagem natural (ex: "Gastei 50 reais no almoço", "Recebi 2000 de salário").
+    *   Suporte a entrada por voz (Speech-to-Text) para maior conveniência.
+*   Lógica de Clarificação da IA (Sequência de Perguntas Específicas):
+    *   Quando o usuário fornece informações incompletas, a IA fará perguntas proativas e não intrusivas para coletar os dados necessários.
+    *   Exemplo de Fluxo:
+        1.  Usuário: "Comprei um café."
+        2.  IA: "Entendi! Qual o valor do café?"
+        3.  Usuário: "15 reais."
+        4.  IA: "Certo. Foi no débito ou crédito?"
+        5.  Usuário: "Crédito."
+        6.  IA: "Ok. Foi hoje, [Data Atual]?" (Se não, pergunta "Quando foi?")
+        7.  Usuário: "Sim."
+        8.  IA: "Sugiro categorizar como 'Alimentação'. Confirma? Ou prefere outra categoria?"
+        9.  Usuário: "Confirmo."
+        10. IA: "Registro de R$15 em 'Alimentação' (Crédito) confirmado para hoje. Algo mais?"
+*   Tratamento de Campos Obrigatórios vs. Opcionais:
+    *   Obrigatórios: Descrição (inferida do chat), Valor, Tipo de Pagamento (Crédito/Débito), Data.
+    *   Opcionais: Parcelas (se aplicável), Categoria (a IA sugere, mas o usuário pode alterar ou adicionar).
+*   Capacidade Offline com Sincronização:
+    *   MVP: O registro de transações via chat funcionará mesmo sem conexão à internet.
+    *   Sincronização: Os dados serão armazenados localmente e sincronizados automaticamente com o servidor (ou armazenamento local persistente) assim que a conexão for restabelecida. (Considerado para V2 se o esforço for grande para o MVP, mas com capacidade de registro offline e sincronização posterior como objetivo de longo prazo).
+
+4.2. MÓDULO DE ACOMPANHAMENTO DE INVESTIMENTOS (FOCO PRIMÁRIO)
+
+*   Registro de Ativos:
+    *   Permite ao usuário adicionar manualmente diferentes tipos de investimentos (CDBs, Ações, Fundos de Investimento, Tesouro Direto, etc.).
+    *   Campos: Nome do Ativo, Tipo de Ativo, Data de Início, Valor Inicial.
+*   Rastreamento do Histórico de Posição:
+    *   O usuário pode inserir manualmente o valor atualizado de um investimento em datas específicas (ex: "Em 01/10/2025, meu CDB estava em R$5.100,00").
+    *   O sistema registrará essas "posições" ao longo do tempo.
+*   Cálculo de Rentabilidade Real:
+    *   Com base nas posições históricas inseridas, o sistema calculará a rentabilidade (ganho/perda) do investimento em diferentes períodos.
+    *   Cálculo de rentabilidade percentual e absoluta.
+*   Visualização Interativa:
+    *   Gráficos de linha que mostram a evolução do valor do investimento e sua rentabilidade ao longo do tempo.
+    *   Gráficos responsivos e interativos para celular.
+*   Visão Consolidada do Portfólio:
+    *   Um resumo que mostra o valor total dos investimentos, a rentabilidade consolidada e a distribuição por tipo de ativo.
+
+4.3. CALCULADORA DE METAS INTELIGENTES
+
+*   Definição de Metas:
+    *   O usuário define um Valor Alvo (ex: "Comprar um videogame de R$3.000").
+    *   O usuário informa uma das variáveis: Prazo (ex: "em 10 meses") OU Contribuição Mensal (ex: "guardar R$300 por mês").
+*   Cálculo Automático:
+    *   O sistema preenche automaticamente a variável faltante e informa o usuário (ex: "Você levará 10 meses para atingir sua meta").
+*   Acompanhamento Visual do Progresso:
+    *   Exibição clara do quanto já foi economizado para a meta e o quanto falta.
+
+4.4. PAINEL DE RELATÓRIOS
+
+*   Extrato de Gastos:
+    *   Visualização detalhada de todas as transações (gastos e receitas).
+    *   Filtros por período, tipo de pagamento e categoria.
+*   Gastos Consolidados por Categoria:
+    *   Gráficos de pizza ou barras que mostram a distribuição dos gastos por categoria (ex: Alimentação, Transporte, Lazer).
+    *   Comparação mensal para identificar tendências.
+*   Performance de Investimentos:
+    *   Relatório consolidado da rentabilidade do portfólio.
+    *   Rentabilidade individual por produto de investimento.
+    *   Gráficos de linha para visualização da evolução.
+*   Customização:
+    *   Permite ao usuário definir períodos personalizados para os relatórios.
+    *   Filtros por produto de investimento e categoria de gasto.
+*   Visualização:
+    *   Gráficos interativos e responsivos, otimizados para dispositivos móveis.
+    *   Resumos rápidos e visuais dos principais indicadores.
+
+4.5. AGENTE IA REATIVO
+
+*   Gatilho: O agente é acionado pelo usuário através de um comando no chat (ex: "Perguntar ao Agente", "Me dê uma dica").
+*   Insights sobre Concentração de Gastos:
+    *   Analisa os padrões de gastos do usuário e aponta categorias onde há maior concentração (ex: "Você gastou X% a mais em 'Lazer' este mês do que a média").
+*   Alertas de Performance de Investimentos:
+    *   Compara a rentabilidade de um ativo com a expectativa ou com o mercado (se houver dados de referência).
+    *   Sugere a revisão de investimentos com baixa performance.
+*   Recomendações Personalizadas:
+    *   Oferece dicas de economia baseadas no perfil de gastos do usuário.
+    *   Sugere a revisão de investimentos mais rentáveis (com base nos dados inseridos).
+
+5. ARQUITETURA DA INTERFACE DO USUÁRIO
+
+5.1. ESTRUTURA DE NAVEGAÇÃO
+
+O aplicativo terá uma Barra de Navegação Inferior fixa, com 4 módulos principais para facilitar o acesso rápido e intuitivo às funcionalidades mais importantes.
+
+*   Módulos da Barra Inferior:
+    1.  Chat: Interface principal de interação com a IA para registro de transações e consultas.
+    2.  Investimentos: Gerenciamento, acompanhamento e visualização do portfólio de investimentos.
+    3.  Metas: Definição, acompanhamento e visualização do progresso das metas financeiras.
+    4.  Relatórios: Acesso aos dashboards de gastos e performance de investimentos.
+
+*   Fluxo de Usuário entre Módulos:
+    *   Chat -> Investimentos: Após registrar um investimento, o usuário pode ser direcionado para a tela de Investimentos para ver o impacto.
+    *   Chat -> Metas: Após definir uma meta, o usuário pode ser direcionado para a tela de Metas para acompanhar o progresso.
+    *   Qualquer Módulo -> Chat: Um ícone de "Ajuda" ou "Perguntar ao Agente" pode estar disponível em outras telas para iniciar uma conversa contextualizada.
+
+5.2. ESPECIFICAÇÕES DE TELA
+
+*   Tela Inicial / Dashboard:
+    *   Layout: Resumo visual rápido e personalizável.
+    *   Conteúdo:
+        *   Saldo consolidado (se houver integração futura ou saldo manual).
+        *   Resumo dos gastos recentes (ex: "Você gastou R$X esta semana").
+        *   Progresso das metas mais importantes.
+        *   Performance consolidada dos investimentos.
+        *   Um atalho proeminente para o Chat ("Começar a registrar").
+*   Tela de Chat / Input Conversacional:
+    *   Layout: Interface de mensagens (balões de conversa).
+    *   Conteúdo:
+        *   Histórico de conversas com a IA.
+        *   Campo de texto para digitação.
+        *   Botão de microfone para entrada de voz.
+        *   Sugestões de ações rápidas (ex: "Registrar Gasto", "Ver Gastos", "Adicionar Investimento").
+*   Tela de Investimentos (Detalhada):
+    *   Layout: Lista de investimentos, com cards para cada ativo.
+    *   Conteúdo:
+        *   Visão Geral: Valor total investido, rentabilidade consolidada.
+        *   Lista de Ativos: Cada card exibe Nome do Ativo, Tipo, Valor Atual, Rentabilidade.
+        *   Detalhe do Ativo (ao clicar):
+            *   Nome, Tipo, Data de Início.
+            *   Gráfico de linha da evolução do valor e rentabilidade.
+            *   Lista de "Posições" registradas (Data, Valor).
+            *   Botão "Adicionar Posição".
+        *   Botão "Adicionar Novo Investimento".
+*   Tela de Metas:
+    *   Layout: Lista de metas com cards de progresso.
+    *   Conteúdo:
+        *   Lista de Metas: Cada card exibe Nome da Meta, Valor Alvo, Valor Atual, Progresso (barra visual), Prazo Restante.
+        *   Botão "Criar Nova Meta".
+        *   Detalhe da Meta (ao clicar):
+            *   Nome, Valor Alvo, Contribuição Mensal, Prazo.
+            *   Gráfico de progresso.
+            *   Botão "Editar Meta".
+*   Tela de Relatórios:
+    *   Layout: Abas ou seções para diferentes tipos de relatório.
+    *   Conteúdo:
+        *   Filtros: Seletores de período (Semanal, Mensal, Anual, Personalizado).
+        *   Gastos:
+            *   Gráfico de pizza/barras de gastos por categoria.
+            *   Extrato detalhado com filtros.
+        *   Investimentos:
+            *   Gráfico de linha da rentabilidade consolidada.
+            *   Gráfico de barras da rentabilidade por ativo.
+            *   Tabela de rentabilidade detalhada.
+
+6. LÓGICA DE CONVERSA DA IA (DETALHADA)
+
+A inteligência conversacional do VibeFinance é projetada para ser intuitiva, proativa na coleta de dados e resiliente a entradas incompletas.
+
+*   Reconhecimento de Intenção:
+    *   Padrões: A IA identificará a intenção do usuário com base em palavras-chave e estrutura da frase.
+    *   Exemplos:
+        *   "Comprei", "Gastei", "Paguei", "Despesa": Intenção de registrar gasto.
+        *   "Recebi", "Ganhei", "Salário": Intenção de registrar receita.
+        *   "Adicionar investimento", "Meu CDB": Intenção de gerenciar investimentos.
+        *   "Minha meta", "Quero poupar": Intenção de gerenciar metas.
+        *   "Quanto gastei", "Meus investimentos": Intenção de consultar relatórios.
+        *   "Dica", "Ajuda": Intenção de interagir com o Agente IA.
+*   Identificação de Dados Faltantes:
+    *   Após reconhecer a intenção, a IA verificará quais campos essenciais para aquela ação estão ausentes na entrada inicial do usuário.
+*   Algoritmo de Priorização de Perguntas:
+    *   Para Gastos/Receitas:
+        1.  Valor: Sempre o primeiro a ser perguntado se ausente.
+        2.  Tipo de Pagamento (Crédito/Débito): Essencial para o fluxo de caixa.
+        3.  Data: Padrão para "hoje", mas perguntar se a transação ocorreu em outro dia.
+        4.  Parcelas: Perguntar apenas se o tipo de pagamento for "Crédito".
+        5.  Categoria: Sugerir uma categoria com base na descrição (ex: "café" -> "Alimentação") e pedir confirmação, ou perguntar se o usuário deseja outra.
+    *   Para Investimentos (Registro de Posição):
+        1.  Ativo: Qual o investimento (se não especificado).
+        2.  Data da Posição: Padrão para "hoje", mas perguntar se diferente.
+        3.  Valor da Posição: O valor atualizado do ativo.
+*   Preservação de Contexto:
+    *   A IA manterá o contexto da conversa, permitindo que o usuário responda às perguntas sequencialmente sem precisar repetir informações.
+    *   Exemplo: Se a IA perguntou "Qual o valor?" e o usuário respondeu "50", a próxima pergunta não repetirá o valor.
+*   Fluxos de Confirmação:
+    *   Antes de finalizar um registro, a IA apresentará um resumo para confirmação do usuário.
+    *   Exemplo: "Confirma o registro de R$50 em 'Alimentação', pago no débito hoje?"
+*   Tratamento de Erros:
+    *   Se a IA não entender a entrada do usuário, ela pedirá clarificação de forma amigável.
+    *   Exemplo: "Não entendi. Poderia reformular?" ou "Preciso de um valor numérico. Poderia me dizer o valor novamente?"
+
+7. MODELO DE DADOS
+
+O modelo de dados do MVP será simplificado para focar nas funcionalidades essenciais, utilizando um esquema relacional básico.
+
+*   Entidades Core:
+    *   Usuario: ID (PK), Nome, Email, SenhaHash, DataCadastro.
+    *   Categoria: ID (PK), NomeCategoria, Tipo (Receita/Despesa), UsuarioID (FK).
+           Observação:* Categorias pré-definidas para iniciantes, com opção de adicionar personalizadas.
+    *   Transacao: ID (PK), UsuarioID (FK), Descricao, Valor, TipoPagamento (Debito/Credito), Data, Parcelas (int, 0 se não parcelado), CategoriaID (FK, pode ser nulo inicialmente para IA sugerir).
+    *   Investimento: ID (PK), UsuarioID (FK), NomeAtivo, TipoAtivo (CDB, Acao, Fundo, etc.), DataInicio, ValorInicial.
+    *   PosicaoInvestimento: ID (PK), InvestimentoID (FK), DataPosicao, ValorPosicao.
+    *   Meta: ID (PK), UsuarioID (FK), NomeMeta, ValorAlvo, ValorAtual, DataInicio, DataFim (calculado), ContribuicaoMensal (calculado).
+
+*   Relacionamentos entre Entidades:
+    *   Usuario 1:N Categoria (Um usuário pode ter muitas categorias)
+    *   Usuario 1:N Transacao (Um usuário pode ter muitas transações)
+    *   Transacao N:1 Categoria (Uma transação pertence a uma categoria)
+    *   Usuario 1:N Investimento (Um usuário pode ter muitos investimentos)
+    *   Investimento 1:N PosicaoInvestimento (Um investimento pode ter muitas posições históricas)
+    *   Usuario 1:N Meta (Um usuário pode ter muitas metas)
+
+*   Estratégia de Armazenamento para MVP:
+    *   Para o MVP, os dados serão persistidos no cliente usando LocalStorage ou IndexedDB. Isso permite um desenvolvimento rápido e validação da experiência do usuário sem a necessidade de uma infraestrutura de backend complexa inicial.
+    *   A sincronização de dados será tratada localmente, com a capacidade de exportação/importação manual para backup.
+
+8. REQUISITOS TÉCNICOS
+
+*   Plataforma: Aplicativo Web Mobile-First (Progressive Web App - PWA). Isso permite acesso via navegador em qualquer dispositivo móvel, com a possibilidade de instalação na tela inicial como um app nativo.
+*   Stack Tecnológico:
+    *   Frontend: React (com Next.js para otimização de performance e roteamento).
+    *   Estilização: Tailwind CSS para um design responsivo e moderno.
+    *   Gráficos: Recharts para visualizações de dados interativas e responsivas.
+    *   Entrada de Voz: Web Speech API (nativa dos navegadores) para funcionalidade Speech-to-Text.
+*   Armazenamento de Dados (MVP):
+    *   LocalStorage ou IndexedDB para persistência de dados do usuário no lado do cliente.
+*   Considerações de Performance:
+    *   Otimização de carregamento de assets e código para garantir uma experiência fluida em dispositivos móveis.
+    *   Renderização eficiente de gráficos e listas longas.
+*   Segurança (MVP):
+    *   Foco na segurança dos dados armazenados localmente (criptografia básica se possível, mas o principal é a ausência de dados sensíveis bancários no MVP).
+    *   Proteção contra XSS e CSRF em um contexto PWA.
+
+9. MÉTRICAS DE SUCESSO E KPIs
+
+O sucesso do VibeFinance será medido através de uma combinação de métricas de engajamento, retenção e adoção de funcionalidades.
+
+*   Métricas de Engajamento:
+    *   DAU/MAU (Daily/Monthly Active Users): Número de usuários únicos que interagem com o app diariamente/mensalmente.
+    *   Número Médio de Transações Registradas por Usuário/Dia: Indica a frequência e a facilidade de uso do input conversacional.
+    *   Tempo Médio de Sessão: Quanto tempo os usuários passam no app por sessão.
+    *   Taxa de Interação com o Agente IA: % de usuários que utilizam o Agente IA para dicas ou consultas.
+*   Indicadores de Retenção:
+    *   Taxa de Retenção (Semanal/Mensal): % de usuários que retornam ao app após a primeira semana/mês.
+    *   Taxa de Churn: % de usuários que param de usar o app em um determinado período.
+*   Taxas de Adoção de Funcionalidades:
+    *   % de Usuários que Registram Investimentos: Indica a relevância do módulo de investimentos.
+    *   % de Usuários que Criam Metas: Demonstra a utilidade da calculadora de metas.
+    *   % de Transações com Categoria Definida: Avalia a eficácia da sugestão de categoria da IA e a personalização.
+
+10. ROADMAP
+
+O desenvolvimento do VibeFinance será dividido em fases, começando com um MVP focado e evoluindo com base no feedback do usuário e nas necessidades do mercado.
+
+*   MVP (Fase 1):
+    *   Motor de Input Conversacional: Registro de gastos/receitas via chat (texto e voz) com IA de clarificação.
+    *   Módulo de Acompanhamento de Investimentos: Registro de ativos, histórico de posições, cálculo de rentabilidade e gráficos de linha.
+    *   Calculadora de Metas Inteligentes: Definição de metas com cálculo automático de prazo/contribuição.
+    *   Painel de Relatórios Básicos: Extrato de gastos, gastos por categoria, rentabilidade de investimentos.
+    *   Agente IA Reativo: Dicas de gastos e investimentos sob demanda.
+    *   Armazenamento Local: Persistência de dados no cliente.
+*   Fase 2 (Aprimoramentos e Inteligência):
+    *   Integração Bancária: Conexão com APIs de Open Banking para importação automática de transações (com consentimento do usuário).
+    *   Classificação Automática de Transações com ML: Modelo que aprende com o histórico do usuário para categorizar transações de forma autônoma.
+    *   Agente IA Proativo e Mais Inteligente: Integração com LLM externo (ex: Adapta) para geração de dicas mais sofisticadas e proativas.
+    *   Análise de Portfólio Avançada: Sugestões de mix ideal de investimentos com base no perfil do usuário.
+    *   Notificações Inteligentes: Alertas sobre gastos excessivos, metas atingidas, oportunidades de economia.
+    *   Capacidade Offline Robusta: Sincronização avançada e resolução de conflitos.
+*   Fase 3 (Integrações e Expansão):
+    *   Integração com Corretoras/Plataformas de Investimento: Importação automática de dados de investimentos.
+    *   Funcionalidades de Orçamento Avançadas: Orçamentos flexíveis, acompanhamento de limites.
+    *   Compartilhamento Familiar: Gestão financeira compartilhada para casais ou famílias.
+    *   Versão Web Completa: Acesso ao VibeFinance via desktop com funcionalidades expandidas.
+
+11. MODELO DE NEGÓCIOS
+
+O VibeFinance adota um modelo de negócios que valoriza o acesso inicial e a evolução contínua, com foco na sustentabilidade a longo prazo.
+
+*   Modelo de Licenciamento:
+    *   Licença Vitalícia para o MVP: O acesso às funcionalidades da Fase 1 (MVP) será oferecido através de uma licença vitalícia de compra única. Isso remove a barreira de entrada de assinaturas mensais e atrai usuários que buscam uma solução duradoura.
+*   Estratégia de Upgrades Pagos:
+    *   Evoluções Pagas: As funcionalidades e aprimoramentos desenvolvidos nas Fases 2 e 3 serão oferecidos como upgrades pagos ou através de um modelo de assinatura premium. Isso garante um fluxo de receita contínuo para o desenvolvimento e manutenção do produto, ao mesmo tempo em que oferece valor adicional aos usuários que desejam recursos mais avançados.
+    *   Exemplos de Upgrades: Integração bancária, Agente IA avançado, análise de portfólio, funcionalidades de orçamento, etc.
