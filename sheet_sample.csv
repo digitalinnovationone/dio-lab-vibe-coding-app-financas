@@ -1,0 +1,4 @@
+timestamp,user_name,amount,category,date,note,source
+2026-02-24T15:00:00,José,50.00,Alimentação,2026-02-24,"Compra mercado","landbot"
+2026-02-23T18:30:00,José,30.00,Transporte,2026-02-23,"Uber","landbot"
+2026-02-20T09:15:00,José,200.00,Poupança,2026-02-20,"Transferência","landbot"

@@ -1,89 +1,226 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# VibeFinanças
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+## 1. Visão geral
+**VibeFinanças** é um protótipo de fluxo conversacional para registro rápido de transações via chat. O objetivo é capturar transações com baixo atrito, validar e confirmar com o usuário e persistir os dados em uma planilha (Google Sheets) via webhook ou serviço intermediário. Este repositório reúne artefatos de prototipagem, exemplos de payloads, amostras de planilha e placeholders para evidências visuais — tudo pensado para testes manuais, automação de integração e futura conexão com backends ou LLMs.
 
-## ✨ O que é Vibe Coding
+---
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+## 2. Entregáveis e histórico do que foi feito
+**Arquivos e pastas incluídos**
+- `assets/screenshots/` — pasta para capturas de tela (contém `.gitkeep` como placeholder).  
+- `flow_description.md` — descrição detalhada do fluxo conversacional, roteiro de perguntas, regras de validação e exemplos de interação.  
+- `sheet_sample.csv` — amostra de planilha com colunas e linhas de exemplo para validar mapeamento e testes.  
+- `README.md` — este arquivo (em Markdown).
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+**Resumo das ações realizadas nesta entrega**
+- Criação e edição de `flow_description.md` com roteiro completo do fluxo.  
+- Criação de `sheet_sample.csv` com exemplos representativos.  
+- Inclusão de `assets/screenshots/.gitkeep` para manter a pasta no repositório.  
+- Branch `cleanup-placeholders` criado; PR aberto e **mesclado em `main`**; merge commit preservado no histórico.  
+- Commits com mensagens descritivas documentando cada etapa do trabalho.
 
-## 🎯 Desafio
+---
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+## 3. Fluxo conversacional detalhado (roteiro, variáveis e validações)
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+### Objetivo do fluxo
+Capturar: **tipo**, **valor**, **categoria**, **data**, **observação** e opcionalmente **usuario_id**; confirmar com o usuário; enviar payload JSON ao webhook para persistência.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+### Roteiro passo a passo
+1. **Trigger / Início**  
+   - Ativado por palavra-chave, botão ou evento.  
+   - Mensagem inicial sugerida: “Vamos registrar uma transação? (sim/não)”.
 
-## 🪄 Etapas do Desafio
+2. **Tipo**  
+   - Pergunta: “É receita ou despesa?”  
+   - Validação: aceitar `receita` ou `despesa` (case-insensitive); oferecer botões rápidos.
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+3. **Valor**  
+   - Pergunta: “Qual o valor?”  
+   - Validação: número > 0; aceitar formatos com vírgula ou ponto; normalizar para decimal com ponto.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+4. **Categoria**  
+   - Pergunta: “Qual a categoria?” (sugestões: Alimentação, Transporte, Lazer, Salário, etc.)  
+   - Validação: string curta; mapear para categorias canônicas quando aplicável.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+5. **Data**  
+   - Pergunta: “Qual a data?”  
+   - Aceitar: `hoje`, `ontem`, `YYYY-MM-DD`, `DD/MM/YYYY`; normalizar para `YYYY-MM-DD`.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+6. **Observação** (opcional)  
+   - Pergunta: “Alguma observação?” (limite sugerido: 500 caracteres).
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+7. **Confirmação**  
+   - Mostrar resumo formatado e perguntar: “Confirmar e salvar? (sim/não)”.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+8. **Persistência**  
+   - Ao confirmar, enviar POST JSON ao webhook; tratar resposta e informar sucesso/erro ao usuário.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+### Variáveis e regras de validação
+- `usuario_id` — string; opcional.  
+- `tipo` — `receita` | `despesa` (obrigatório).  
+- `valor` — decimal > 0 (obrigatório).  
+- `categoria` — string (recomendada).  
+- `data` — `YYYY-MM-DD` (obrigatório; aceitar termos relativos).  
+- `observacao` — string (opcional; até 500 chars).
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+**Normalizações aplicadas**
+- Remover símbolos de moeda; substituir vírgula por ponto; converter para `float`.  
+- Converter `hoje`/`ontem` para `YYYY-MM-DD` no timezone do usuário.  
+- Mapear categorias livres para um conjunto canônico quando possível.
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+---
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+## 4. Formatos, exemplos e testes práticos
 
-### 2. Explorando o Lovable na Prática
+### Exemplo de payload JSON (webhook)
+```json
+{
+  "usuario_id": "user_123",
+  "tipo": "despesa",
+  "valor": 45.90,
+  "categoria": "Transporte",
+  "data": "2026-02-24",
+  "observacao": "Uber para reunião"
+}
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+---
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+sheet_sample.csv (colunas e exemplo)
+Colunas recomendadas: usuario_id,tipo,valor,categoria,data,observacao  
+Exemplo de linha:
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+user_123,despesa,45.90,Transporte,2026-02-24,"Uber para reunião"
 
-### 3. Entregando o Desafio na DIO
+Testes manuais rápidos
+Ler flow_description.md e seguir o roteiro de perguntas.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Usar sheet_sample.csv para validar colunas e formato.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+Enviar payloads de teste para um endpoint (ex.: webhook.site) e verificar recebimento.
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+Testes automatizados sugeridos
+Script Node/Python que:
 
-## 💬 Conclusão
+Lê sheet_sample.csv.
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+Gera payloads JSON válidos e inválidos.
+
+Envia POST para endpoint de teste e valida respostas.
+
+Testes unitários para funções de normalização (valor, data, categoria).
+
+Exemplo rápido (curl)
+
+curl -X POST https://webhook.site/SEU_ENDPOINT \
+  -H "Content-Type: application/json" \
+  -d '{"usuario_id":"user_123","tipo":"despesa","valor":45.9,"categoria":"Transporte","data":"2026-02-24","observacao":"Teste"}'
+
+5. Integração prática e opções de implementação
+Opção A — Google Apps Script (rápido para protótipo)
+Criar Apps Script ligado à planilha.
+
+Implementar doPost(e) que parseie e.postData.contents e escreva uma nova linha.
+
+Publicar como Web App (definir permissões).
+
+Usar URL do Web App como webhook no fluxo.
+
+Pontos a documentar no Apps Script
+
+Mapeamento de colunas; tratamento de duplicatas; logs; tratamento de erros.
+
+Opção B — Serviço intermediário (recomendado para produção)
+Pequeno servidor (Express/Flask) que:
+
+Valida e normaliza payload.
+
+Usa Google Sheets API (OAuth2) para inserir linhas.
+
+Implementa retry, logging e monitoramento.
+
+Vantagens: controle de erros, transformação, autenticação e testes.
+
+6. Git, evidências, checklist e próximos passos
+Verificações e comandos úteis (para confirmar estado atual)
+
+# entrar no repositório
+cd /c/Users/renan/dio-lab-vibe-coding-app-financas/dio-lab-vibe-coding-app-financas
+
+# garantir main atualizado
+git checkout main
+git pull origin main
+
+# ver últimos commits (merge commit deve aparecer)
+git log --oneline -n 10
+
+# confirmar arquivos
+ls -la
+
+# confirmar que branch cleanup-placeholders foi removida do remoto
+git branch -r | grep cleanup-placeholders || echo "origin/cleanup-placeholders não existe"
+
+Evidências a anexar à entrega
+URL do PR mesclado (copiar do GitHub).
+
+Saída de git log --oneline -n 5 mostrando o merge commit.
+
+Screenshots do PR com status Merged e da árvore de arquivos no main.
+
+Links diretos para flow_description.md e sheet_sample.csv no GitHub.
+
+Checklist final para entrega
+[ ] flow_description.md completo e revisado.
+
+[ ] sheet_sample.csv com exemplos representativos.
+
+[ ] assets/screenshots/ com imagens ou .gitkeep como placeholder.
+
+[ ] PR criado e Merged em main.
+
+[ ] git log com merge commit salvo como evidência.
+
+[ ] README final em Markdown (este arquivo) commitado.
+
+Próximos passos recomendados (priorizados)
+Implementar endpoint de gravação (Apps Script ou serviço intermediário) e documentar deploy.
+
+Adicionar exemplos de conversas reais e capturas de tela em assets/screenshots/.
+
+Criar testes automatizados que validem payloads gerados a partir de sheet_sample.csv.
+
+Incluir CHANGELOG.md com resumo das entregas por PR.
+
+Adicionar LICENSE (ex.: MIT) se necessário.
+
+Contato e suporte
+Abra uma Issue no repositório para dúvidas, sugestões ou relatos de bugs. Para comunicação direta, use o canal acordado com a equipe (e‑mail/Slack).
+
+
+**Próxima ação que eu executo por você**  
+Posso gerar agora os **comandos exatos** para criar o branch `docs/update-readme`, commitar este `README.md` em Markdown e abrir o PR; cole **Gerar comandos** e eu preparo tudo pronto para você colar no terminal.
+
+## 🔗 Demonstração do Aplicativo (Lovable)
+
+O protótipo funcional do **VibeFinanças** foi implementado utilizando a plataforma **Lovable** e pode ser acessado no link abaixo:
+
+👉 https://vibe-chat-finance.lovable.app
+
+### O que é demonstrado no aplicativo
+- Onboarding do usuário (nome, objetivo financeiro e idioma)
+- Fluxo guiado de registro de transações (wizard)
+- Captura estruturada de dados (tipo, valor, categoria, data e observação)
+- Confirmação explícita antes do salvamento
+- Suporte multilíngue (Português, Inglês, Espanhol e Francês)
+- Convivência entre fluxo guiado e entrada por texto livre (NLU)
+
+Este link serve como evidência funcional do conceito descrito neste repositório.
+
+---
+
+## 📸 Evidências Visuais
+
+Abaixo estão algumas capturas de tela do aplicativo em funcionamento, demonstrando o fluxo guiado de registro de transações e a interface do usuário.
+
+> As imagens estão disponíveis na pasta `assets/screenshots/`.
+
