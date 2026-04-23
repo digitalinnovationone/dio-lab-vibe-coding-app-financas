@@ -79,7 +79,7 @@ No README do seu repositório, inclua:
 - Uma breve **reflexão sobre o processo**:
   - O que funcionou bem?  
   - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+  - O que aprendeu sobre conversar com IA?
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
