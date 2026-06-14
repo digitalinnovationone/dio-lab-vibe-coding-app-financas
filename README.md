@@ -1,89 +1,255 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 FinanIA – Assistente Inteligente de Finanças Pessoais
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+Projeto desenvolvido durante o desafio **Vibe Coding da DIO**, utilizando Inteligência Artificial como parceira na concepção de um aplicativo de organização financeira pessoal.
 
-## ✨ O que é Vibe Coding
+O objetivo do FinanIA é permitir que usuários controlem suas finanças por meio de conversas naturais com uma IA, eliminando a necessidade de planilhas complexas e lançamentos manuais excessivos.
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+---
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+# 🎯 Problema
 
-## 🎯 Desafio
+Muitas pessoas abandonam aplicativos financeiros porque:
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+- Exigem cadastro manual constante;
+- Possuem interfaces complexas;
+- Não oferecem orientação personalizada;
+- Transformam o controle financeiro em uma tarefa cansativa.
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+O FinanIA busca resolver esse problema utilizando Inteligência Artificial conversacional para registrar gastos, analisar padrões financeiros e sugerir planos personalizados de economia.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+---
 
-## 🪄 Etapas do Desafio
+# 👥 Público-Alvo
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+- Universitários
+- Jovens profissionais
+- Pessoas iniciando a organização financeira
+- Famílias que desejam controlar gastos e atingir metas financeiras
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+---
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+# 🚀 Principais Funcionalidades
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+- Registro de receitas e despesas via conversa natural
+- Dashboard financeiro inteligente
+- Classificação automática de gastos
+- Metas financeiras personalizadas
+- Análise de padrões de consumo
+- Sugestões de economia com IA
+- Histórico de conversas persistente
+- Alertas financeiros inteligentes
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+---
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+# 📋 PRD (Product Requirements Document)
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+## Contexto
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+Quero criar um aplicativo chamado **FinanIA** que funcione como um assistente financeiro pessoal baseado em Inteligência Artificial.
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+O usuário poderá registrar gastos, consultar seu histórico financeiro e receber recomendações personalizadas por meio de conversas naturais, tornando o controle financeiro simples e acessível.
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+## Problema
 
-### 2. Explorando o Lovable na Prática
+Muitas pessoas desistem de controlar suas finanças porque os aplicativos atuais exigem muita entrada manual de dados e oferecem pouca personalização.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+## Público-Alvo
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Pessoas que desejam organizar melhor suas finanças sem depender de planilhas ou processos complexos.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+## Funcionalidades-Chave
 
-### 3. Entregando o Desafio na DIO
+1. Registrar gastos via chat.
+2. Categorizar automaticamente transações.
+3. Criar e acompanhar metas financeiras.
+4. Receber sugestões personalizadas de economia.
+5. Visualizar relatórios e indicadores financeiros.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+## Entregável Esperado
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+- Plano de MVP
+- Fluxo de telas
+- Definição do agente de IA
+- Jornada do usuário
+- Estratégia de validação do produto
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+---
 
-## 💬 Conclusão
+# 🏗️ Documento de Product Manager
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+A partir do PRD, foi gerado um documento completo contendo:
+
+- Visão do Produto
+- Personas
+- Roadmap
+- Jornada do Usuário
+- Wireframes Conceituais
+- Fluxo de Navegação
+- Arquitetura Técnica
+- Modelo de Dados
+- Estratégia de Validação
+- Roadmap de Sprints
+
+---
+
+# 🚀 Evolução do Projeto
+
+## Sprint 1 – Fundação do MVP
+
+Implementação das funcionalidades básicas:
+
+- Login e cadastro de usuários
+- Dashboard financeiro
+- CRUD de lançamentos financeiros
+- Banco de dados seguro com RLS
+- Navegação mobile-first
+
+### Tecnologias
+
+- React
+- TanStack Start
+- Tailwind CSS
+- Lovable Cloud
+- PostgreSQL
+
+---
+
+## Sprint 2 – Inteligência Artificial
+
+Implementação do agente conversacional FinanIA:
+
+### Funcionalidades
+
+- Chat IA com múltiplas conversas
+- Histórico persistente
+- Integração com Gemini
+- Registro automático de gastos
+- Consulta de despesas
+- Análise de padrões financeiros
+- Sugestões inteligentes de economia
+
+### Ferramentas da IA
+
+#### register_transaction
+
+Registra despesas e receitas a partir de linguagem natural.
+
+Exemplo:
+
+> "Gastei R$ 40 no Uber"
+
+#### query_spending
+
+Consulta gastos por período ou categoria.
+
+Exemplo:
+
+> "Quanto gastei este mês?"
+
+#### analyze_patterns
+
+Analisa tendências financeiras.
+
+Exemplo:
+
+> "Onde estou gastando mais?"
+
+---
+
+# 📸 Evidências do Desenvolvimento
+
+## Prompt Inicial
+
+![Prompt Inicial](Prompt_1.png)
+
+---
+
+## Refinamento do Prompt
+
+![Prompt Refinado](Prompt_2.png)
+
+---
+
+## Prompt Final
+
+![Prompt Final](Prompt_3.png)
+
+---
+
+## Documento de Product Manager
+
+![Documento PM](Retorno_PM_sprint_1.png)
+
+---
+
+## Resumo da Sprint 1
+
+![Sprint 1](Resumo_sprint_1.png)
+
+---
+
+## Resultado da Sprint 1
+
+![Resultado Sprint 1](Retorno_1.png)
+
+---
+
+## Implementação da Sprint 2
+
+![Sprint 2](Implementacao_sprint_2.png)
+
+---
+
+## FinanIA
+
+![FinanIA](FinanIA.png)
+
+---
+
+# 🧠 O que Aprendi
+
+Durante este desafio percebi que desenvolver com IA vai muito além da programação tradicional.
+
+O principal aprendizado foi a importância de criar prompts claros, fornecer contexto adequado e evoluir gradualmente os requisitos do produto.
+
+Também compreendi como ferramentas de IA podem atuar como parceiras no processo de desenvolvimento, auxiliando na criação de:
+
+- Produtos digitais
+- Fluxos de navegação
+- Modelagem de dados
+- Experiência do usuário
+- Estratégias de validação
+
+---
+
+# 💡 Reflexão Final
+
+O desafio mostrou que o Vibe Coding não é apenas pedir para a IA criar algo.
+
+É um processo de construção colaborativa onde o profissional define objetivos, fornece contexto, valida resultados e evolui a solução junto com a Inteligência Artificial.
+
+Essa experiência reforçou competências importantes para minha transição para a área de tecnologia e análise de dados, especialmente em produtos apoiados por IA.
+
+---
+
+# 🔗 Tecnologias e Ferramentas Utilizadas
+
+- GitHub
+- GitHub Copilot
+- Lovable
+- Gemini
+- Lovable AI Gateway
+- React
+- TanStack Start
+- PostgreSQL
+- Tailwind CSS
+
+---
+
+## 👩‍💻 Autora
+
+**Thaísa Encarnação**
+
+Doutora em Neurociências e estudante de Análise de Dados para Políticas Públicas.
+
+Projeto desenvolvido para o desafio **DIO – Vibe Coding: App de Finanças Pessoais com IA**.
