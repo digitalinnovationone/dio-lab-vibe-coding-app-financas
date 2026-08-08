@@ -21,3 +21,6 @@ Thumbs.db
 !.vscode/extensions.json
 .idea/
 *.suo
+
+# Conhecimento (graphify)
+graphify-out/
