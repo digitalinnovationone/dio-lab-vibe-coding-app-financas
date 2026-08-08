@@ -93,6 +93,37 @@ graph TB
 | **Regras de negócio** | Cálculos e validações | Saldo = receitas − despesas do mês atual |
 | **Dados** | Persistência local | Salvar transações no navegador (localStorage) |
 
+### 2.1 Schemas e Contratos de Dados (localStorage)
+
+Para garantir consistência técnica e evitar ambiguidades quando gerado por IAs (Copilot, Lovable), as entidades seguem os contratos estruturados abaixo:
+
+#### Transação (`Transaction`)
+```json
+{
+  "id": "string (uuid-v4)",
+  "description": "string (ex: Mercado)",
+  "amount": "number (float positivo, ex: 50.00)",
+  "type": "string ('expense' | 'income')",
+  "category": "string ('Alimentação' | 'Moradia' | 'Transporte' | 'Lazer' | 'Saúde' | 'Salário' | 'Outros')",
+  "date": "string (ISO 8601, ex: 2026-08-08T11:45:00.000Z)"
+}
+```
+
+#### Meta Financeira (`Goal`)
+```json
+{
+  "id": "string (uuid-v4)",
+  "title": "string (ex: Guardar para emergência)",
+  "targetAmount": "number (float positivo, ex: 500.00)",
+  "currentAmount": "number (float positivo ou zero, ex: 150.00)",
+  "monthYear": "string (formato MM/YYYY, ex: 08/2026)"
+}
+```
+
+#### Segurança e Validações
+- **Sanitização XSS:** Todo input do usuário no chat deve ser limpo/escapado antes de ser inserido no DOM.
+- **Validação de Entrada:** Despesas ou receitas com valores menores ou iguais a zero devem ser rejeitadas pelo agente.
+
 ### Fluxo de uma transação
 
 ```mermaid

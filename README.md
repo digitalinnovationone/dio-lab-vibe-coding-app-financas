@@ -343,6 +343,25 @@ Refine! Use os **Refinamentos** de cada fase. Seja mais específico ou quebre em
 ### "Onde copio o prompt?"
 Cada fase tem um bloco `prompt principal`. Cole inteiro no seu chat (depois de colar o PRD.md).
 
+## 🖼️ Demonstração Visual do App (Screenshots em Funcionamento)
+
+Abaixo estão as capturas de tela do produto gerado a partir do fluxo de Vibe Coding:
+
+### 1. Interface de Chat & Registro de Transações
+Interface conversacional moderna em tom escuro, exibindo o cartão de saldo consolidado e a interação fluida com o Agente Financeiro registrando lançamentos por linguagem natural.
+
+![Chat e Registro por Linguagem Natural](docs/images/chat-interface.jpg)
+
+### 2. Dashboard de Análise Financeira & Relatórios
+Painel visual com gráfico de rosca por categorias (Alimentação, Moradia, Transporte, Lazer, Saúde), histórico dos últimos 6 meses e destaque da principal categoria de gastos.
+
+![Dashboard e Gráficos de Categoria](docs/images/dashboard-analytics.jpg)
+
+### 3. Acompanhamento de Metas Financeiras
+Painel de acompanhamento de metas de economia com barra de progresso em tempo real e notificações motivacionais do Agente Financeiro.
+
+![Metas Financeiras e Progresso](docs/images/metas-financeiras.jpg)
+
 ### "Quanto tempo leva?"
 Realisticamente: **4-6 horas** se for pela 1ª vez. Pode ser mais rápido se praticar.
 

@@ -47,7 +47,7 @@ Pessoas que querem começar a organizar suas finanças de forma prática e sem c
 - **Cálculo do mês:** saldo = receitas do mês atual − despesas do mês atual. Valores em formato brasileiro (R$ 1.234,56). Saldo positivo em verde, negativo em vermelho.
 - **Meta:** "quero guardar X por mês" cria uma meta com progresso mensal; o agente comemora quando atingida.
 - **Dicas:** o agente sempre cita a maior categoria de gasto do mês.
-- **Persistência:** dados salvos no navegador (localStorage), nada se perde ao recarregar.
+- **Persistência & Segurança:** dados salvos no navegador (localStorage), sanitização de inputs do chat contra XSS, validação de valores numéricos (> 0) e nada se perde ao recarregar a página.
 
 ## Telas do App
 
