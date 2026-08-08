@@ -1,6 +1,6 @@
 # 💸 App de Organização de Finanças Pessoais com Vibe Coding
 
-> **Laboratório educacional DIO** — Aprenda a criar soluções com IA de forma criativa, guiando **Copilot** e **Lovable** com comunicação simples e natural.
+> **Laboratório educacional DIO** — Aprenda a criar soluções com IA de forma criativa, guiando **Copilot** e **Lovable** com comunicação simples e natural podendo usar outras IA  de sua preferência.
 
 ---
 
@@ -39,6 +39,7 @@
 **Tempo estimado:** 4-6 horas (usando Lovable ou Copilot)
 
 **Pré-requisitos:**
+
 - Uma conta em [Lovable.ai](https://lovable.ai) OU acesso a [Copilot Web](https://copilot.microsoft.com)
 - Este repositório aberto em outra aba
 - Um pouco de paciência e criatividade! 🎨
@@ -52,6 +53,7 @@
 ### **Etapa 1: Definir a Visão (30 min)**
 
 Crie um **PRD (Product Requirements Document)** que descreva:
+
 - **Problema:** Muitas pessoas desistem de controlar gastos porque apps são complexos
 - **Solução:** Um app que controla finanças por **conversa simples**
 - **Funcionalidades:** Chat → Registro → Classificação → Saldo → Metas → Dashboard
@@ -73,6 +75,7 @@ Siga as **6 fases** em `prompts/`, uma de cada vez:
 6. **Fase 6** → Persistência e polimento
 
 Cada fase tem:
+
 - 📋 **Prompt principal** (cole no Lovable/Copilot)
 - 🔧 **Refinamentos** (perguntas comuns para ajustar)
 - ✅ **Checklist de aceite** (valide antes de avançar)
@@ -97,30 +100,33 @@ Publique seu repositório (pode ser fork deste) com:
 
 ## 📁 Arquivos Importantes
 
-| Arquivo | Propósito | Leitura |
-|---------|-----------|---------|
-| **PRD.md** | Documento de Requisitos do Produto — contexto persistente | 📖 Obrigatória (1ª) |
-| **ARCHITECTURE.md** | Arquitetura do app e organização do repositório | 📖 Recomendada |
-| **AGENTS.md** | Instruções para ferramentas de IA | 📖 Se usar Copilot |
-| **prompts/fase-*.md** | Prompts estruturados (0-6) | 📖 Conforme avanço |
+| Arquivo                     | Propósito                                                 | Leitura               |
+| --------------------------- | ---------------------------------------------------------- | --------------------- |
+| **PRD.md**            | Documento de Requisitos do Produto — contexto persistente | 📖 Obrigatória (1ª) |
+| **ARCHITECTURE.md**   | Arquitetura do app e organização do repositório         | 📖 Recomendada        |
+| **AGENTS.md**         | Instruções para ferramentas de IA                        | 📖 Se usar Copilot    |
+| **prompts/fase-*.md** | Prompts estruturados (0-6)                                 | 📖 Conforme avanço   |
 
 ---
 
 ## 🎮 As 6 Fases do Projeto
 
 ### **Fase 0: UI Base** ← Comece por aqui!
+
 **Objetivo:** Montar a tela inicial do app
 
 **Entregável:**
+
 - Título "Minhas Finanças"
 - Cartão "Saldo do mês" (zerado)
 - Mensagem de boas-vindas do agente
 - Campo de texto + botão enviar
 
-**Tempo:** 15-20 min  
+**Tempo:** 15-20 min
 **Prompt:** [prompts/fase-0-base.md](./prompts/fase-0-base.md)
 
 **Checklist:**
+
 - [ ] Título visível
 - [ ] Cartão de saldo aparece
 - [ ] Chat com boas-vindas
@@ -129,18 +135,21 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 1: Chat e Registro**
+
 **Objetivo:** IA entende transações em linguagem natural
 
 **Entregável:**
+
 - "gastei 50 no mercado" → registra despesa R$ 50,00
 - "recebi 3500 de salário" → registra receita R$ 3.500,00
 - Confirmação antes de salvar
 - Lista de transações
 
-**Tempo:** 20-30 min  
+**Tempo:** 20-30 min
 **Prompt:** [prompts/fase-1-chat.md](./prompts/fase-1-chat.md)
 
 **Checklist:**
+
 - [ ] Entende despesas ("gastei", "paguei")
 - [ ] Entende receitas ("recebi", "ganhei")
 - [ ] Pede confirmação
@@ -149,18 +158,21 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 2: Classificação e Organização**
+
 **Objetivo:** Transações são organizadas por categoria automaticamente
 
 **Entregável:**
+
 - Categorias: Alimentação, Moradia, Transporte, Lazer, Saúde, Outros
 - Lista agrupada por dia
 - Cores: despesa (vermelha), receita (verde)
 - Resumo por categoria
 
-**Tempo:** 20-30 min  
+**Tempo:** 20-30 min
 **Prompt:** [prompts/fase-2-classificacao.md](./prompts/fase-2-classificacao.md)
 
 **Checklist:**
+
 - [ ] "mercado" → Alimentação
 - [ ] "aluguel" → Moradia
 - [ ] Lista ordenada por data
@@ -169,18 +181,21 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 3: Cálculos e Saldo**
+
 **Objetivo:** Saldo real do mês é calculado
 
 **Entregável:**
+
 - Saldo = Receitas - Despesas do mês
 - Cartão mostra: Entradas, Saídas, Saldo
 - Formato brasileiro: R$ 1.234,56
 - Agente responde sobre gastos
 
-**Tempo:** 15-20 min  
+**Tempo:** 15-20 min
 **Prompt:** [prompts/fase-3-saldo.md](./prompts/fase-3-saldo.md)
 
 **Checklist:**
+
 - [ ] Saldo calcula correto
 - [ ] Só mês atual é considerado
 - [ ] Formato brasileiro
@@ -189,18 +204,21 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 4: Agente Inteligente**
+
 **Objetivo:** IA dá dicas e acompanha metas
 
 **Entregável:**
+
 - "quero guardar 500 por mês" → cria meta
 - Cartão de meta com progresso
 - Dicas personalizadas sobre maior gasto
 - Comemorações ao atingir meta
 
-**Tempo:** 20-25 min  
+**Tempo:** 20-25 min
 **Prompt:** [prompts/fase-4-agente.md](./prompts/fase-4-agente.md)
 
 **Checklist:**
+
 - [ ] Meta é criada e confirmada
 - [ ] Progresso é visualizado
 - [ ] Dicas citam categoria maior
@@ -209,19 +227,22 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 5: Dashboard e Relatórios**
+
 **Objetivo:** Visualização gráfica dos dados
 
 **Entregável:**
+
 - Aba "Dashboard"
 - Gráfico de rosca por categoria
 - Gráfico de barras (últimos 6 meses)
 - Categoria campeã destacada
 - Legenda com valores e %
 
-**Tempo:** 20-30 min  
+**Tempo:** 20-30 min
 **Prompt:** [prompts/fase-5-dashboard.md](./prompts/fase-5-dashboard.md)
 
 **Checklist:**
+
 - [ ] Duas abas funcionam (Conversa / Dashboard)
 - [ ] Rosca mostra categorias
 - [ ] Barras mostram histórico
@@ -230,9 +251,11 @@ Publique seu repositório (pode ser fork deste) com:
 ---
 
 ### **Fase 6: Persistência e Polimento**
+
 **Objetivo:** App está completo, funcional e responsivo
 
 **Entregável:**
+
 - Dados salvam em localStorage
 - Botão "Limpar dados" com confirmação
 - Validações de valores
@@ -240,10 +263,11 @@ Publique seu repositório (pode ser fork deste) com:
 - Toast notifications
 - Rodapé
 
-**Tempo:** 15-20 min  
+**Tempo:** 15-20 min
 **Prompt:** [prompts/fase-6-persistencia.md](./prompts/fase-6-persistencia.md)
 
 **Checklist:**
+
 - [ ] Recarrega página, dados continuam
 - [ ] Responsivo no celular
 - [ ] Validações funcionam
@@ -307,21 +331,22 @@ Complete este **Checklist Final de Qualidade:**
 ### Como Entregar
 
 1. **Customize seu PRD.md**
+
    - Descreva suas escolhas e decisões
    - Deixe claro o problema e a solução
-
 2. **Adicione screenshots**
+
    - Abra seu app no Lovable/Copilot
    - Capture telas de cada fase
    - Crie pasta `screenshots/` no repositório
-
 3. **Escreva sua reflexão**
+
    - Crie `REFLEXAO.md` com:
      - ✅ O que funcionou bem?
      - ❌ O que não funcionou como esperado?
      - 🧠 O que aprendeu sobre Vibe Coding?
-
 4. **Publique**
+
    - Commit final: `git commit -m "chore: entrega final DIO"`
    - Push para main
    - Copie o link do repositório
@@ -332,15 +357,19 @@ Complete este **Checklist Final de Qualidade:**
 ## 💬 FAQ e Dúvidas
 
 ### "Preciso saber programar?"
+
 **Não!** O objetivo é aprender a comunicar com IA. A IA escreve o código.
 
 ### "Posso usar Copilot em vez de Lovable?"
+
 **Sim!** Ambos funcionam. Lovable é visual (mais intuitivo). Copilot é via chat (mais controle).
 
 ### "E se a IA não entender meu prompt?"
+
 Refine! Use os **Refinamentos** de cada fase. Seja mais específico ou quebre em pedaços menores.
 
 ### "Onde copio o prompt?"
+
 Cada fase tem um bloco `prompt principal`. Cole inteiro no seu chat (depois de colar o PRD.md).
 
 ## 🖼️ Demonstração Visual do App (Screenshots em Funcionamento)
@@ -348,30 +377,37 @@ Cada fase tem um bloco `prompt principal`. Cole inteiro no seu chat (depois de c
 Abaixo estão as capturas de tela do produto gerado a partir do fluxo de Vibe Coding:
 
 ### 1. Interface de Chat & Registro de Transações
+
 Interface conversacional moderna em tom escuro, exibindo o cartão de saldo consolidado e a interação fluida com o Agente Financeiro registrando lançamentos por linguagem natural.
 
 ![Chat e Registro por Linguagem Natural](docs/images/chat-interface.jpg)
 
 ### 2. Dashboard de Análise Financeira & Relatórios
+
 Painel visual com gráfico de rosca por categorias (Alimentação, Moradia, Transporte, Lazer, Saúde), histórico dos últimos 6 meses e destaque da principal categoria de gastos.
 
 ![Dashboard e Gráficos de Categoria](docs/images/dashboard-analytics.jpg)
 
 ### 3. Acompanhamento de Metas Financeiras
+
 Painel de acompanhamento de metas de economia com barra de progresso em tempo real e notificações motivacionais do Agente Financeiro.
 
 ![Metas Financeiras e Progresso](docs/images/metas-financeiras.jpg)
 
 ### "Quanto tempo leva?"
+
 Realisticamente: **4-6 horas** se for pela 1ª vez. Pode ser mais rápido se praticar.
 
 ### "E se eu não conseguir completar todas as fases?"
+
 Tudo bem! Você ainda aprende. Entregue o que conseguiu com sua reflexão.
 
 ### "Posso customizar o app?"
+
 Claro! Mude cores, adicione features, mude o tom do agente. Isso é Vibe Coding!
 
 ### "Como faço para testar se funciona?"
+
 - **Lovable:** Clica no play (há pré-visualização)
 - **Copilot:** Rode `npm run dev` (se usar React/Next)
 
@@ -380,6 +416,7 @@ Claro! Mude cores, adicione features, mude o tom do agente. Isso é Vibe Coding!
 ## 🏆 Casos de Sucesso
 
 Exemplos de apps que saíram bem assim:
+
 - ✅ App de TODO com IA
 - ✅ Calculadora de finanças pessoais
 - ✅ Planner de viagens
