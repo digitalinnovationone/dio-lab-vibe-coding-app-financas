@@ -1,89 +1,403 @@
 # 💸 App de Organização de Finanças Pessoais com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+> **Laboratório educacional DIO** — Aprenda a criar soluções com IA de forma criativa, guiando **Copilot** e **Lovable** com comunicação simples e natural.
+
+---
+
+## 📚 Índice Rápido
+
+1. [O que é Vibe Coding](#-o-que-é-vibe-coding)
+2. [Comece Aqui](#-comece-aqui-guia-rápido)
+3. [O Desafio em 3 Etapas](#-o-desafio-em-3-etapas)
+4. [Arquivos Importantes](#-arquivos-importantes)
+5. [As 6 Fases do Projeto](#-as-6-fases-do-projeto)
+6. [Exemplos Visuais](#-exemplos-visuais-de-cada-fase)
+7. [Validação e Entrega](#-validação-e-entrega-na-dio)
+8. [FAQ e Dúvidas](#-faq-e-dúvidas)
+
+---
 
 ## ✨ O que é Vibe Coding
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a:
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+- ✅ **Comunicar claramente** sua visão para a IA
+- ✅ **Validar incrementalmente** cada fase do projeto
+- ✅ **Colaborar naturalmente** com ferramentas de IA (Copilot, Lovable)
+- ✅ **Transformar ideias em soluções reais** sem escrever código manual
 
-## 🎯 Desafio
+> **Regra de Ouro:** Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+---
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+## 🚀 Comece Aqui: Guia Rápido
+
+### Para Alunos da DIO
+
+**Seu objetivo:** Construir um **App de Organização de Finanças Pessoais** apenas conversando com IA.
+
+**Tempo estimado:** 4-6 horas (usando Lovable ou Copilot)
+
+**Pré-requisitos:**
+- Uma conta em [Lovable.ai](https://lovable.ai) OU acesso a [Copilot Web](https://copilot.microsoft.com)
+- Este repositório aberto em outra aba
+- Um pouco de paciência e criatividade! 🎨
+
+**Próximo passo:** Leia [PRD.md](./PRD.md) — é seu briefing para a IA.
+
+---
+
+## 🎯 O Desafio em 3 Etapas
+
+### **Etapa 1: Definir a Visão (30 min)**
+
+Crie um **PRD (Product Requirements Document)** que descreva:
+- **Problema:** Muitas pessoas desistem de controlar gastos porque apps são complexos
+- **Solução:** Um app que controla finanças por **conversa simples**
+- **Funcionalidades:** Chat → Registro → Classificação → Saldo → Metas → Dashboard
+
+📄 **Use:** [PRD.md](./PRD.md) como referência e customize conforme sua visão.
+
+> [!TIP]
+> Pense no PRD como "o briefing que a IA precisa para entender sua vibe". Quanto mais claro, melhores as respostas!
+
+### **Etapa 2: Construir com IA (2-4 horas)**
+
+Siga as **6 fases** em `prompts/`, uma de cada vez:
+
+1. **Fase 0** → UI base (título, cartão de saldo, chat)
+2. **Fase 1** → Registro de gastos via conversa
+3. **Fase 2** → Classificação automática + lista
+4. **Fase 3** → Cálculos de saldo
+5. **Fase 4** → Agente inteligente (metas + dicas)
+6. **Fase 6** → Persistência e polimento
+
+Cada fase tem:
+- 📋 **Prompt principal** (cole no Lovable/Copilot)
+- 🔧 **Refinamentos** (perguntas comuns para ajustar)
+- ✅ **Checklist de aceite** (valide antes de avançar)
+
+📄 **Use:** Pasta `prompts/fase-N-*.md`
+
+### **Etapa 3: Entregar na DIO (30 min)**
+
+Publique seu repositório (pode ser fork deste) com:
+
+- ✅ Seu **PRD.md** personalizado
+- ✅ Screenshots ou vídeos das interações com IA
+- ✅ Resumo do que o app faz
+- ✅ Reflexão: o que funcionou? O que aprendeu?
+
+📄 **Siga:** Instruções em [Como Entregar](#como-entregar)
 
 > [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+> **Você não precisa construir o código!** O foco é usar a IA como parceira criativa.
 
-## 🪄 Etapas do Desafio
+---
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+## 📁 Arquivos Importantes
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+| Arquivo | Propósito | Leitura |
+|---------|-----------|---------|
+| **PRD.md** | Documento de Requisitos do Produto — contexto persistente | 📖 Obrigatória (1ª) |
+| **ARCHITECTURE.md** | Arquitetura do app e organização do repositório | 📖 Recomendada |
+| **AGENTS.md** | Instruções para ferramentas de IA | 📖 Se usar Copilot |
+| **prompts/fase-*.md** | Prompts estruturados (0-6) | 📖 Conforme avanço |
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+---
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+## 🎮 As 6 Fases do Projeto
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+### **Fase 0: UI Base** ← Comece por aqui!
+**Objetivo:** Montar a tela inicial do app
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+**Entregável:**
+- Título "Minhas Finanças"
+- Cartão "Saldo do mês" (zerado)
+- Mensagem de boas-vindas do agente
+- Campo de texto + botão enviar
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+**Tempo:** 15-20 min  
+**Prompt:** [prompts/fase-0-base.md](./prompts/fase-0-base.md)
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+**Checklist:**
+- [ ] Título visível
+- [ ] Cartão de saldo aparece
+- [ ] Chat com boas-vindas
+- [ ] Campo de entrada funciona
+
+---
+
+### **Fase 1: Chat e Registro**
+**Objetivo:** IA entende transações em linguagem natural
+
+**Entregável:**
+- "gastei 50 no mercado" → registra despesa R$ 50,00
+- "recebi 3500 de salário" → registra receita R$ 3.500,00
+- Confirmação antes de salvar
+- Lista de transações
+
+**Tempo:** 20-30 min  
+**Prompt:** [prompts/fase-1-chat.md](./prompts/fase-1-chat.md)
+
+**Checklist:**
+- [ ] Entende despesas ("gastei", "paguei")
+- [ ] Entende receitas ("recebi", "ganhei")
+- [ ] Pede confirmação
+- [ ] Lista atualiza
+
+---
+
+### **Fase 2: Classificação e Organização**
+**Objetivo:** Transações são organizadas por categoria automaticamente
+
+**Entregável:**
+- Categorias: Alimentação, Moradia, Transporte, Lazer, Saúde, Outros
+- Lista agrupada por dia
+- Cores: despesa (vermelha), receita (verde)
+- Resumo por categoria
+
+**Tempo:** 20-30 min  
+**Prompt:** [prompts/fase-2-classificacao.md](./prompts/fase-2-classificacao.md)
+
+**Checklist:**
+- [ ] "mercado" → Alimentação
+- [ ] "aluguel" → Moradia
+- [ ] Lista ordenada por data
+- [ ] Resumo de categorias correto
+
+---
+
+### **Fase 3: Cálculos e Saldo**
+**Objetivo:** Saldo real do mês é calculado
+
+**Entregável:**
+- Saldo = Receitas - Despesas do mês
+- Cartão mostra: Entradas, Saídas, Saldo
+- Formato brasileiro: R$ 1.234,56
+- Agente responde sobre gastos
+
+**Tempo:** 15-20 min  
+**Prompt:** [prompts/fase-3-saldo.md](./prompts/fase-3-saldo.md)
+
+**Checklist:**
+- [ ] Saldo calcula correto
+- [ ] Só mês atual é considerado
+- [ ] Formato brasileiro
+- [ ] Agente responde "qual meu saldo?"
+
+---
+
+### **Fase 4: Agente Inteligente**
+**Objetivo:** IA dá dicas e acompanha metas
+
+**Entregável:**
+- "quero guardar 500 por mês" → cria meta
+- Cartão de meta com progresso
+- Dicas personalizadas sobre maior gasto
+- Comemorações ao atingir meta
+
+**Tempo:** 20-25 min  
+**Prompt:** [prompts/fase-4-agente.md](./prompts/fase-4-agente.md)
+
+**Checklist:**
+- [ ] Meta é criada e confirmada
+- [ ] Progresso é visualizado
+- [ ] Dicas citam categoria maior
+- [ ] Comemoração funciona
+
+---
+
+### **Fase 5: Dashboard e Relatórios**
+**Objetivo:** Visualização gráfica dos dados
+
+**Entregável:**
+- Aba "Dashboard"
+- Gráfico de rosca por categoria
+- Gráfico de barras (últimos 6 meses)
+- Categoria campeã destacada
+- Legenda com valores e %
+
+**Tempo:** 20-30 min  
+**Prompt:** [prompts/fase-5-dashboard.md](./prompts/fase-5-dashboard.md)
+
+**Checklist:**
+- [ ] Duas abas funcionam (Conversa / Dashboard)
+- [ ] Rosca mostra categorias
+- [ ] Barras mostram histórico
+- [ ] Legenda com %
+
+---
+
+### **Fase 6: Persistência e Polimento**
+**Objetivo:** App está completo, funcional e responsivo
+
+**Entregável:**
+- Dados salvam em localStorage
+- Botão "Limpar dados" com confirmação
+- Validações de valores
+- Responsividade (mobile funciona)
+- Toast notifications
+- Rodapé
+
+**Tempo:** 15-20 min  
+**Prompt:** [prompts/fase-6-persistencia.md](./prompts/fase-6-persistencia.md)
+
+**Checklist:**
+- [ ] Recarrega página, dados continuam
+- [ ] Responsivo no celular
+- [ ] Validações funcionam
+- [ ] Toasts aparecem/desaparecem
+
+---
+
+## 🎨 Exemplos Visuais de Cada Fase
+
+Veja como o app deve ficar em cada fase. Acesse os arquivos de exemplo:
+
+- 🎨 [Fase 0 - UI Base](./examples/fase-0-ui-base.html)
+- 🎨 [Fase 1 - Chat e Registro](./examples/fase-1-chat.html)
+- 🎨 [Fase 2 - Classificação](./examples/fase-2-classificacao.html)
+- 🎨 [Fase 3 - Saldo](./examples/fase-3-saldo.html)
+- 🎨 [Fase 4 - Agente](./examples/fase-4-agente.html)
+- 🎨 [Fase 5 - Dashboard](./examples/fase-5-dashboard.html)
+- 🎨 [Fase 6 - Final](./examples/fase-6-final.html)
+
+> Abra qualquer arquivo `.html` em seu navegador para ver a aparência esperada.
+
+---
+
+## ✅ Validação e Entrega na DIO
+
+### Antes de Entregar
+
+Complete este **Checklist Final de Qualidade:**
+
+```markdown
+## ✅ Checklist Final
+
+### Funcionalidade
+- [ ] Conversa entende transações em linguagem natural
+- [ ] Valores calculam correto (Saldo = Receitas - Despesas)
+- [ ] Categorias são atribuídas automaticamente
+- [ ] Metas funcionam e progresso é visível
+- [ ] Dashboard mostra gráficos corretos
+- [ ] Dados persistem ao recarregar
+
+### UX/Design
+- [ ] Tudo está em português
+- [ ] Cores estão corretas (verde receita, vermelho despesa)
+- [ ] Responsivo no celular
+- [ ] Botões são clicáveis e rápidos
+- [ ] Mensagens do agente são amigáveis
+
+### Documentação
+- [ ] README completo com descrição do app
+- [ ] PRD.md customizado
+- [ ] Screenshots de cada fase
+- [ ] Reflexão sobre o processo
+
+### Padrão DIO
+- [ ] Licença MIT presente
+- [ ] Repositório público
+- [ ] Commit histórico limpo
+- [ ] Link testável (clone e abre no navegador)
 ```
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+### Como Entregar
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+1. **Customize seu PRD.md**
+   - Descreva suas escolhas e decisões
+   - Deixe claro o problema e a solução
 
-### 2. Explorando o Lovable na Prática
+2. **Adicione screenshots**
+   - Abra seu app no Lovable/Copilot
+   - Capture telas de cada fase
+   - Crie pasta `screenshots/` no repositório
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+3. **Escreva sua reflexão**
+   - Crie `REFLEXAO.md` com:
+     - ✅ O que funcionou bem?
+     - ❌ O que não funcionou como esperado?
+     - 🧠 O que aprendeu sobre Vibe Coding?
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+4. **Publique**
+   - Commit final: `git commit -m "chore: entrega final DIO"`
+   - Push para main
+   - Copie o link do repositório
+   - Cole na plataforma DIO
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+---
 
-### 3. Entregando o Desafio na DIO
+## 💬 FAQ e Dúvidas
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+### "Preciso saber programar?"
+**Não!** O objetivo é aprender a comunicar com IA. A IA escreve o código.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+### "Posso usar Copilot em vez de Lovable?"
+**Sim!** Ambos funcionam. Lovable é visual (mais intuitivo). Copilot é via chat (mais controle).
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+### "E se a IA não entender meu prompt?"
+Refine! Use os **Refinamentos** de cada fase. Seja mais específico ou quebre em pedaços menores.
 
-## 💬 Conclusão
+### "Onde copio o prompt?"
+Cada fase tem um bloco `prompt principal`. Cole inteiro no seu chat (depois de colar o PRD.md).
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+### "Quanto tempo leva?"
+Realisticamente: **4-6 horas** se for pela 1ª vez. Pode ser mais rápido se praticar.
+
+### "E se eu não conseguir completar todas as fases?"
+Tudo bem! Você ainda aprende. Entregue o que conseguiu com sua reflexão.
+
+### "Posso customizar o app?"
+Claro! Mude cores, adicione features, mude o tom do agente. Isso é Vibe Coding!
+
+### "Como faço para testar se funciona?"
+- **Lovable:** Clica no play (há pré-visualização)
+- **Copilot:** Rode `npm run dev` (se usar React/Next)
+
+---
+
+## 🏆 Casos de Sucesso
+
+Exemplos de apps que saíram bem assim:
+- ✅ App de TODO com IA
+- ✅ Calculadora de finanças pessoais
+- ✅ Planner de viagens
+- ✅ Chat com documentos (RAG)
+
+---
+
+## 📚 Leitura Adicional
+
+- 📖 [ARCHITECTURE.md](./ARCHITECTURE.md) — Arquitetura técnica do app
+- 📖 [AGENTS.md](./AGENTS.md) — Contexto para IA
+- 📖 [PRD.md](./PRD.md) — Requisitos completos
+
+---
+
+## 📞 Suporte
+
+- ❓ **Dúvida sobre uma fase?** Leia os Refinamentos no arquivo `prompts/fase-N.md`
+- ❓ **Copilot não entende?** Cole o PRD.md primeiro, depois a fase
+- ❓ **Bugs?** Abra uma issue com a fase onde errou
+
+---
+
+## 📝 Licença
+
+MIT © 2026 [Pedro Zeferino da Silva](https://github.com/PedroZef)
+
+---
+
+## 🚀 Vamos Começar?
+
+1. Leia [PRD.md](./PRD.md)
+2. Abra [Lovable.ai](https://lovable.ai) ou [Copilot Web](https://copilot.microsoft.com)
+3. Cole o PRD completo no chat
+4. Siga [prompts/fase-0-base.md](./prompts/fase-0-base.md)
+5. Boa sorte! 🎨
+
+---
+
+**Feito com vibe coding 💜**
