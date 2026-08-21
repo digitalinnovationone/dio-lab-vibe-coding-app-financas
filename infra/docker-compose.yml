@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    image: chatmoney-backend:local
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PORT=3001
+    command: ["node", "index.js"]
+
+# Note: this compose file assumes a simple local dev environment. Adjust as needed.
