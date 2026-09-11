@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Finanças — Ciclo de Desenvolvimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div>
+                <h1>Minhas Finanças</h1>
+                <p class="subtitle">Ciclo de Desenvolvimento — Vibe Coding</p>
+            </div>
+            <button class="btn-dark-mode" id="btnDarkMode" title="Alternar modo escuro">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p class="progress-text" id="progressText">0 de 7 fases concluídas</p>
+    </header>
+
+    <main class="main">
+        <div class="phases-grid" id="phasesGrid"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <button class="btn-reset" id="btnReset" style="display:none">Resetar Progresso</button>
+            <p>@2026 - Pedro Zeferino da Silva</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="prompt-section">
+                    <div class="prompt-header">
+                        <h4>Prompt desta fase</h4>
+                        <div class="prompt-actions">
+                            <button class="btn-edit" id="btnEdit">Editar</button>
+                            <button class="btn-save" id="btnSave" style="display:none">Salvar</button>
+                            <button class="btn-cancel-edit" id="btnCancelEdit" style="display:none">Cancelar</button>
+                        </div>
+                    </div>
+                    <pre class="prompt-code" id="promptCode"></pre>
+                    <textarea class="prompt-edit" id="promptEdit" style="display:none"></textarea>
+                    <button class="btn-copy" id="btnCopy">Copiar Prompt</button>
+                </div>
+                <div class="checklist-section">
+                    <h4>Checklist de Aceite</h4>
+                    <ul class="checklist" id="checklist"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-advance" id="btnAdvance" disabled>Marcar como Concluída e Avançar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
