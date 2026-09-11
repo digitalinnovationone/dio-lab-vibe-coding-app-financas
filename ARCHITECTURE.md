@@ -86,18 +86,19 @@ graph TB
 
 ### Camada por camada
 
-| Camada | Responsabilidade | Exemplo de regra |
-|---|---|---|
-| **Interface** | Telas e interação do usuário | Chat, cartão de saldo, lista, dashboard, metas |
-| **Inteligência** | Conversa com o usuário | Entender "gastei 50 no mercado" → despesa R$ 50,00 |
-| **Regras de negócio** | Cálculos e validações | Saldo = receitas − despesas do mês atual |
-| **Dados** | Persistência local | Salvar transações no navegador (localStorage) |
+| Camada                       | Responsabilidade                | Exemplo de regra                                    |
+| ---------------------------- | ------------------------------- | --------------------------------------------------- |
+| **Interface**          | Telas e interação do usuário | Chat, cartão de saldo, lista, dashboard, metas     |
+| **Inteligência**      | Conversa com o usuário         | Entender "gastei 50 no mercado" → despesa R$ 50,00 |
+| **Regras de negócio** | Cálculos e validações        | Saldo = receitas − despesas do mês atual          |
+| **Dados**              | Persistência local             | Salvar transações no navegador (localStorage)     |
 
 ### 2.1 Schemas e Contratos de Dados (localStorage)
 
 Para garantir consistência técnica e evitar ambiguidades quando gerado por IAs (Copilot, Lovable), as entidades seguem os contratos estruturados abaixo:
 
 #### Transação (`Transaction`)
+
 ```json
 {
   "id": "string (uuid-v4)",
@@ -110,6 +111,7 @@ Para garantir consistência técnica e evitar ambiguidades quando gerado por IAs
 ```
 
 #### Meta Financeira (`Goal`)
+
 ```json
 {
   "id": "string (uuid-v4)",
@@ -121,6 +123,7 @@ Para garantir consistência técnica e evitar ambiguidades quando gerado por IAs
 ```
 
 #### Segurança e Validações
+
 - **Sanitização XSS:** Todo input do usuário no chat deve ser limpo/escapado antes de ser inserido no DOM.
 - **Validação de Entrada:** Despesas ou receitas com valores menores ou iguais a zero devem ser rejeitadas pelo agente.
 
@@ -149,15 +152,15 @@ sequenceDiagram
 
 As fases de `prompts/` constroem o app **de fora para dentro**, camada por camada:
 
-| Fase | Camada construída | Entregável |
-|---|---|---|
-| Fase 0 — Base | Interface | Esqueleto visual (título, saldo, chat) |
-| Fase 1 — Chat | Inteligência | Registro de transações por conversa |
-| Fase 2 — Classificação | Inteligência + Regras | Categorização automática e lista |
-| Fase 3 — Saldo | Regras | Cálculo do mês e respostas no chat |
-| Fase 4 — Agente | Inteligência | Metas, dicas e comemorações |
-| Fase 5 — Dashboard | Interface + Regras | Relatórios visuais |
-| Fase 6 — Persistência | Dados | localStorage, validações e polimento |
+| Fase                      | Camada construída     | Entregável                             |
+| ------------------------- | ---------------------- | --------------------------------------- |
+| Fase 0 — Base            | Interface              | Esqueleto visual (título, saldo, chat) |
+| Fase 1 — Chat            | Inteligência          | Registro de transações por conversa   |
+| Fase 2 — Classificação | Inteligência + Regras | Categorização automática e lista     |
+| Fase 3 — Saldo           | Regras                 | Cálculo do mês e respostas no chat    |
+| Fase 4 — Agente          | Inteligência          | Metas, dicas e comemorações           |
+| Fase 5 — Dashboard       | Interface + Regras     | Relatórios visuais                     |
+| Fase 6 — Persistência   | Dados                  | localStorage, validações e polimento  |
 
 > Isso garante que **cada fase é testável isoladamente**: a IA entrega um pedaço que funciona antes de avançar.
 
@@ -165,14 +168,14 @@ As fases de `prompts/` constroem o app **de fora para dentro**, camada por camad
 
 ## 4. Decisões de Arquitetura
 
-| Decisão | Escolha | Por quê |
-|---|---|---|
-| Forma de registro | Conversa em linguagem natural | Desafio DIO: controlar finanças por conversa simples |
-| Classificação | Palavras-chave + categoria padrão "Outros" | Simples de gerar por IA e fácil de evoluir |
-| Cálculo | Somente mês/ano atual | Resumo claro e comparável mês a mês |
-| Persistência | localStorage do navegador | Zero infraestrutura, perfeito para MVP |
-| Formato de valores | R$ 1.234,56 (pt-BR) | Público-alvo brasileiro |
-| Geração do app | Lovable ou Copilot, via prompts | Vibe coding: sem código manual |
+| Decisão           | Escolha                                     | Por quê                                              |
+| ------------------ | ------------------------------------------- | ----------------------------------------------------- |
+| Forma de registro  | Conversa em linguagem natural               | Desafio DIO: controlar finanças por conversa simples |
+| Classificação    | Palavras-chave + categoria padrão "Outros" | Simples de gerar por IA e fácil de evoluir           |
+| Cálculo           | Somente mês/ano atual                      | Resumo claro e comparável mês a mês                |
+| Persistência      | localStorage do navegador                   | Zero infraestrutura, perfeito para MVP                |
+| Formato de valores | R$ 1.234,56 (pt-BR)                         | Público-alvo brasileiro                              |
+| Geração do app   | Lovable ou Copilot, via prompts             | Vibe coding: sem código manual                       |
 
 ## 5. Evolução futura (depois do MVP)
 
