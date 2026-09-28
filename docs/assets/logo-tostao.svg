@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="0.55" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F3D3E" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#0F3D3E" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="258" r="206" fill="#065F46"/>
+  <path d="M256 36 a206 206 0 1 0 128 367.6 L450 450 l-30 -80 A206 206 0 0 0 256 36 Z" fill="url(#coin)"/>
+  <path d="M256 36 a206 206 0 1 0 128 367.6 L450 450 l-30 -80 A206 206 0 0 0 256 36 Z" fill="url(#edge)"/>
+  <circle cx="256" cy="242" r="170" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="10"/>
+  <rect x="160" y="146" width="192" height="54" rx="27" fill="#FFFFFF"/>
+  <rect x="229" y="146" width="54" height="206" rx="27" fill="#FFFFFF"/>
+  <path d="M114 70 C120 100 128 108 158 114 C128 120 120 128 114 158 C108 128 100 120 70 114 C100 108 108 100 114 70 Z" fill="#F59E0B"/>
+  <path d="M66 168 C69 182 73 186 87 189 C73 192 69 196 66 210 C63 196 59 192 45 189 C59 186 63 182 66 168 Z" fill="#FBBF24"/>
+</svg>

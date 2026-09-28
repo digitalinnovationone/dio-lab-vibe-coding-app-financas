@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>doc-page:not(:defined){visibility:hidden}</style>
+  <script src="./doc-page.js"></script>
+  <style>
+    body { margin: 0; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; color: #0F3D3E; }
+    p, li, td, th { font-family: 'Inter', sans-serif; color: #1F2E2F; }
+    a { color: #0F3D3E; }
+    a:hover { color: #10B981; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #E2E8E7; padding: 8px 10px; text-align: left; font-size: 13.5px; }
+    th { background: #F1F5F4; font-weight: 700; }
+  </style>
+</helmet>
+<doc-page margin="0.85in">
+
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+    <img src="./logo-tostao.svg" alt="Tostão" style="width:34px;height:34px;"/>
+    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;color:#0F3D3E;">Tostão</span>
+  </div>
+  <p style="font-size:12.5px;color:#5B6B6C;margin:0 0 28px;">Documentação de produto · Protótipo de alta fidelidade · Setembro 2026</p>
+
+  <h1 style="font-size:30px;margin:0 0 6px;">Tostão — seu agente financeiro por conversa</h1>
+  <p style="font-size:16px;color:#3F5556;margin:0 0 32px;line-height:1.5;">Controle seu dinheiro em 5 segundos por dia, só conversando.</p>
+
+  <h2 style="font-size:19px;margin:0 0 10px;">Visão geral</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 20px;">Tostão é um app de finanças pessoais em que o usuário registra gastos, recebimentos e metas conversando com um agente de IA, sem preencher formulários. O agente interpreta frases em português informal, confirma os dados extraídos antes de salvar, e devolve respostas curtas com números reais do próprio usuário — nunca julgamento, sempre uma ação pequena e concreta.</p>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">O problema</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 20px;">Pessoas abandonam apps de finanças porque registrar cada gasto em formulários é cansativo, orçamento parece punição, e os apps mostram números sem dizer o que fazer com eles. O Tostão remove o formulário e substitui o orçamento punitivo por um agente que orienta com a mesma linguagem que o usuário já usa no dia a dia.</p>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Público e personas</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 12px;">Iniciantes em organização financeira, de 20 a 40 anos, que usam Pix no dia a dia.</p>
+  <table style="margin-bottom:20px;">
+    <tr><th>Persona</th><th>Perfil</th><th>Dor principal</th></tr>
+    <tr><td>Ana, 24</td><td>CLT</td><td>"Meu salário some e não sei onde"</td></tr>
+    <tr><td>Carlos, 38</td><td>Autônomo</td><td>"Nunca sei quanto posso gastar"</td></tr>
+    <tr><td>Juliana, 31</td><td>—</td><td>"Começo a guardar e desisto"</td></tr>
+  </table>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Estrutura do produto</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 12px;">Cinco áreas, acessadas por abas no mobile e por uma barra lateral na versão web:</p>
+  <table style="margin-bottom:20px;">
+    <tr><th>Tela</th><th>Função</th></tr>
+    <tr><td>Chat</td><td>Conversa principal com o agente — registro de transações, aportes em caixinhas e perguntas sobre os próprios dados ou sobre finanças em geral.</td></tr>
+    <tr><td>Painel</td><td>Saldo do mês, destaque "livre para gastar", receitas × despesas, maiores categorias e progresso das caixinhas.</td></tr>
+    <tr><td>Transações</td><td>Lista agrupada por dia, com busca e filtro por categoria.</td></tr>
+    <tr><td>Caixinhas</td><td>Metas de economia com progresso, prazo e aporte mensal sugerido — o usuário pode criar novas metas.</td></tr>
+    <tr><td>Relatórios</td><td>Distribuição por categoria, comparação dos últimos 6 meses e insights automáticos do agente, com filtro de período.</td></tr>
+    <tr><td>Configurações</td><td>Nome do usuário e categorias manuais criadas por ele.</td></tr>
+  </table>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Como o chat entende o usuário</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 10px;">O agente interpreta a frase digitada ou falada e reage de três formas:</p>
+  <ol style="font-size:14px;line-height:1.75;margin:0 0 14px;padding-left:20px;">
+    <li><strong>Registro de transação</strong> — identifica valor, categoria, data e descrição, e mostra um card de confirmação (Confirmar / Corrigir) antes de gravar qualquer coisa.</li>
+    <li><strong>Consulta sobre os próprios dados</strong> — perguntas como "quanto gastei com uber esse mês?", "relatório de agosto" ou "quanto ainda tenho?" são respondidas com números calculados em tempo real sobre as transações do usuário.</li>
+    <li><strong>Pergunta geral sobre finanças</strong> — quando a frase não é nem um registro nem uma consulta sobre os dados do usuário, o agente responde com conhecimento geral de finanças pessoais, mantendo o mesmo tom.</li>
+  </ol>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 20px;">Categorias não reconhecidas automaticamente (ex.: "almoço") são criadas na hora com o próprio nome dito pelo usuário, em vez de caírem em uma categoria genérica.</p>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Personalidade do agente</h2>
+  <p style="font-size:14px;line-height:1.65;margin:0 0 20px;">Consultor amigo e educador, nunca julgador. Frases curtas, no máximo um emoji, sempre com números reais do usuário. Celebra o progresso antes de apontar problemas, e toda crítica vem com uma ação pequena e concreta. Não recomenda produtos financeiros específicos.</p>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Identidade visual</h2>
+  <table style="margin-bottom:20px;">
+    <tr><th>Elemento</th><th>Valor</th></tr>
+    <tr><td>Primária</td><td>#10B981 (verde)</td></tr>
+    <tr><td>Secundária</td><td>#0F3D3E (verde escuro)</td></tr>
+    <tr><td>Destaque (IA / conquistas)</td><td>#F59E0B (âmbar)</td></tr>
+    <tr><td>Receita / Despesa</td><td>#22C55E / #F43F5E</td></tr>
+    <tr><td>Tipografia</td><td>Plus Jakarta Sans (títulos e valores) + Inter (texto)</td></tr>
+    <tr><td>Componentes</td><td>Cards com cantos de 16px, sombras suaves, barras de progresso animadas</td></tr>
+  </table>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Entregáveis</h2>
+  <table style="margin-bottom:20px;">
+    <tr><th>Arquivo</th><th>Descrição</th></tr>
+    <tr><td><a href="./Tostao.dc.html">Tostao.dc.html</a></td><td>App mobile, moldura de celular 390×844</td></tr>
+    <tr><td><a href="./Tostao Web.dc.html">Tostao Web.dc.html</a></td><td>Versão desktop com navegação lateral, voz e persistência local</td></tr>
+    <tr><td><a href="./Tostao Landing.dc.html">Tostao Landing.dc.html</a></td><td>Landing page de apresentação do produto</td></tr>
+  </table>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Decisões técnicas de destaque</h2>
+  <ul style="font-size:14px;line-height:1.75;margin:0 0 20px;padding-left:20px;">
+    <li><strong>Persistência local:</strong> transações, caixinhas, categorias e nome do usuário ficam salvos no navegador, sobrevivendo a recarregamentos.</li>
+    <li><strong>Entrada por voz:</strong> o microfone usa reconhecimento de fala do navegador (pt-BR); a transcrição é enviada automaticamente como se tivesse sido digitada.</li>
+    <li><strong>Respostas abertas sobre finanças:</strong> quando a pergunta não é sobre os dados do próprio usuário, o agente recorre a um modelo de linguagem para responder, mantendo a persona do Tostão.</li>
+  </ul>
+
+  <h2 style="font-size:19px;margin:24px 0 10px;">Próximos passos sugeridos</h2>
+  <ul style="font-size:14px;line-height:1.75;margin:0;padding-left:20px;">
+    <li>Onboarding com plano de economia 50/30/20 adaptado à renda informada.</li>
+    <li>Detecção automática de assinaturas recorrentes nas transações.</li>
+    <li>Modo escuro completo.</li>
+    <li>Conectar a uma base real de transações (Open Finance / Pix) no lugar dos dados de exemplo.</li>
+  </ul>
+
+</doc-page>
+
+</x-dc>
+</body>
+</html>
