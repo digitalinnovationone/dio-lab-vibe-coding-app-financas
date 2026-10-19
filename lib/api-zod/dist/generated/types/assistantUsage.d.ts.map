@@ -1,0 +1,1 @@
+{"version":3,"file":"assistantUsage.d.ts","sourceRoot":"","sources":["../../../src/generated/types/assistantUsage.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACH,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,sBAAsB,CAAC;AAE/D,MAAM,WAAW,cAAc;IAC7B,IAAI,EAAE,MAAM,CAAC;IACb,KAAK,EAAE,MAAM,CAAC;IACd,SAAS,EAAE,MAAM,CAAC;IAClB,MAAM,EAAE,MAAM,CAAC;IACf,IAAI,EAAE,kBAAkB,CAAC;CAC1B"}

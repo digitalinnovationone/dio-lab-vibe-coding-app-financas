@@ -1,0 +1,72 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "j4RxvYt3n69syygxxvviM"
+uri = "file://docs/media/historico-do-projeto.svg"
+type = "image"
+title = "Histórico do projeto"
+description = "Linha do tempo visual dos principais marcos registrados no desenvolvimento."
+logical_id = "37071527-b393-42dc-b6c2-44385e9ccebd"
+content_hash = "sha256:f5883831c8a3b0e3f0b37c1481679e923fa14c5a5d483157229c5001db94310b"
+size = 6636
+mtime_ms = 1792103896339
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2464e30f-b12c-47e8-af82-867e7c6e9bdf/37071527-b393-42dc-b6c2-44385e9ccebd/f0a2e0ae-16a7-4b88-857a-3fbe33329700"
+storage_version_token = "1792104391809442"
+content_type = "image/svg+xml"
+
+[[outputs]]
+id = "H3NdllF756LzwhNyv-1sZ"
+uri = "file://docs/media/mockups/inicio.svg"
+type = "image"
+title = "Mockup ilustrativo — Início"
+description = "Tela conceitual mobile de resumo financeiro, identificada como mockup."
+logical_id = "e1555072-48a3-4fad-9ee9-a9bf38b36abc"
+content_hash = "sha256:7b77ce5a4de2d973bde7b34e016e56beb893d0b495a18a763444029db37b989d"
+size = 7942
+mtime_ms = 1792104272168
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2464e30f-b12c-47e8-af82-867e7c6e9bdf/e1555072-48a3-4fad-9ee9-a9bf38b36abc/b907225b-0bf0-4f7f-8bd0-80c86129d1b5"
+storage_version_token = "1792104392304780"
+content_type = "image/svg+xml"
+
+[[outputs]]
+id = "8MPubPi5znmcXGoaK10_r"
+uri = "file://docs/media/mockups/transacoes.svg"
+type = "image"
+title = "Mockup ilustrativo — Transações"
+description = "Tela conceitual mobile de transações agrupadas e filtros."
+logical_id = "b916d469-1495-40a1-a447-c0d83da8235a"
+content_hash = "sha256:e2a2f2f45e7d852d66032751cd98a26a38e71ad32b805be336ab740575eaec5e"
+size = 8686
+mtime_ms = 1792104277032
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2464e30f-b12c-47e8-af82-867e7c6e9bdf/b916d469-1495-40a1-a447-c0d83da8235a/892f0e94-944c-424e-a858-8b9670571bcc"
+storage_version_token = "1792104392838297"
+content_type = "image/svg+xml"
+
+[[outputs]]
+id = "P3R_3kRAh5XAD_ZkZCRds"
+uri = "file://docs/media/mockups/planejar.svg"
+type = "image"
+title = "Mockup ilustrativo — Planejar"
+description = "Tela conceitual mobile de orçamento, recorrências e parcelas."
+logical_id = "e2c579ac-726b-4d61-af58-23e62c206166"
+content_hash = "sha256:433ba5c1f56c692acf9a3cf4cdb4107bd3cb7c18db7c145204613ee920673e22"
+size = 8037
+mtime_ms = 1792104281956
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2464e30f-b12c-47e8-af82-867e7c6e9bdf/e2c579ac-726b-4d61-af58-23e62c206166/7a16d3af-85c9-450e-a720-611acb4a999f"
+storage_version_token = "1792104393410909"
+content_type = "image/svg+xml"
+
+[[outputs]]
+id = "d3pB3wBE5P7dShK_W6fTe"
+uri = "file://docs/media/mockups/assistente.svg"
+type = "image"
+title = "Mockup ilustrativo — Assistente"
+description = "Tela conceitual mobile do assistente com transações de referência."
+logical_id = "b1d675cc-e762-4f12-a6d3-d14b8159e291"
+content_hash = "sha256:8c8bcbdbf703ad1fb9023972ca62783095122277d1ab0b96e3d02d71f1f427a2"
+size = 8666
+mtime_ms = 1792104286892
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2464e30f-b12c-47e8-af82-867e7c6e9bdf/b1d675cc-e762-4f12-a6d3-d14b8159e291/1aef2495-63c2-4a61-ab00-60fddf4e39db"
+storage_version_token = "1792104393938758"
+content_type = "image/svg+xml"

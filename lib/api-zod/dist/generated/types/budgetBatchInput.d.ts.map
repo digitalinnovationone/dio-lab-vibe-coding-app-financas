@@ -1,0 +1,1 @@
+{"version":3,"file":"budgetBatchInput.d.ts","sourceRoot":"","sources":["../../../src/generated/types/budgetBatchInput.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACH,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,mBAAmB,CAAC;AAEzD,MAAM,WAAW,gBAAgB;IAC/B,mCAAmC;IACnC,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,eAAe,EAAE,CAAC;CAC1B"}

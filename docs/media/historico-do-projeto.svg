@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1120" viewBox="0 0 1400 1120" role="img" aria-labelledby="title description">
+  <title id="title">Histórico do projeto Finanças Pessoais com IA</title>
+  <desc id="description">Linha do tempo com seis marcos registrados no desenvolvimento do projeto, do PRD à segurança e ao acabamento.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7f3"/>
+      <stop offset="1" stop-color="#e8f0eb"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6b57"/>
+      <stop offset="1" stop-color="#78a98f"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#193c30" flood-opacity=".08"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="1120" rx="32" fill="url(#bg)"/>
+  <circle cx="1280" cy="90" r="150" fill="#dce9e1" opacity=".55"/>
+  <circle cx="120" cy="1020" r="180" fill="#e2eee6" opacity=".6"/>
+
+  <text x="90" y="92" fill="#35725d" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3">FINANÇAS PESSOAIS · VIBE CODING</text>
+  <text x="90" y="158" fill="#183b30" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700">Histórico do projeto</text>
+  <text x="92" y="198" fill="#5d7067" font-family="Arial, Helvetica, sans-serif" font-size="21">Marcos reunidos a partir das etapas e solicitações registradas no Replit.</text>
+
+  <path d="M700 245 V918" stroke="#b7cfc0" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 13"/>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="250" width="570" height="194" rx="24" fill="#ffffff"/>
+    <rect x="752" y="250" width="570" height="194" rx="24" fill="#ffffff"/>
+    <rect x="78" y="470" width="570" height="194" rx="24" fill="#ffffff"/>
+    <rect x="752" y="470" width="570" height="194" rx="24" fill="#ffffff"/>
+    <rect x="78" y="690" width="570" height="194" rx="24" fill="#ffffff"/>
+    <rect x="752" y="690" width="570" height="194" rx="24" fill="#ffffff"/>
+  </g>
+
+  <g fill="url(#accent)">
+    <rect x="78" y="250" width="8" height="194" rx="4"/>
+    <rect x="752" y="250" width="8" height="194" rx="4"/>
+    <rect x="78" y="470" width="8" height="194" rx="4"/>
+    <rect x="752" y="470" width="8" height="194" rx="4"/>
+    <rect x="78" y="690" width="8" height="194" rx="4"/>
+    <rect x="752" y="690" width="8" height="194" rx="4"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g>
+      <circle cx="700" cy="347" r="27" fill="#2f6b57" stroke="#f4f7f3" stroke-width="8"/>
+      <text x="700" y="354" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">01</text>
+      <text x="112" y="296" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">BASE</text>
+      <text x="112" y="334" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Fundação e navegação</text>
+      <text x="112" y="371" fill="#52655c" font-size="18">Estrutura web, autenticação, sessão e</text>
+      <text x="112" y="399" fill="#52655c" font-size="18">primeiros fluxos do aplicativo.</text>
+    </g>
+    <g>
+      <text x="786" y="296" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">DADOS</text>
+      <text x="786" y="334" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Contas e transações</text>
+      <text x="786" y="371" fill="#52655c" font-size="18">Provedor simulado, sincronização, busca,</text>
+      <text x="786" y="399" fill="#52655c" font-size="18">filtros e detalhes dos lançamentos.</text>
+    </g>
+
+    <g>
+      <circle cx="700" cy="567" r="27" fill="#2f6b57" stroke="#f4f7f3" stroke-width="8"/>
+      <text x="700" y="574" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">02</text>
+      <text x="112" y="516" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">ORGANIZAÇÃO</text>
+      <text x="112" y="554" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Categorias e recorrências</text>
+      <text x="112" y="591" fill="#52655c" font-size="18">Regras automáticas, correções do usuário,</text>
+      <text x="112" y="619" fill="#52655c" font-size="18">transferências e despesas recorrentes.</text>
+    </g>
+    <g>
+      <text x="786" y="516" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">PLANEJAMENTO</text>
+      <text x="786" y="554" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Projeções e compromissos</text>
+      <text x="786" y="591" fill="#52655c" font-size="18">Parcelas, faturas, valor diário disponível</text>
+      <text x="786" y="619" fill="#52655c" font-size="18">e saldo previsto.</text>
+    </g>
+
+    <g>
+      <circle cx="700" cy="787" r="27" fill="#2f6b57" stroke="#f4f7f3" stroke-width="8"/>
+      <text x="700" y="794" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">03</text>
+      <text x="112" y="736" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">INSIGHTS</text>
+      <text x="112" y="774" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Alertas e assistente</text>
+      <text x="112" y="811" fill="#52655c" font-size="18">Resumo semanal e respostas com base nos</text>
+      <text x="112" y="839" fill="#52655c" font-size="18">dados financeiros do próprio usuário.</text>
+    </g>
+    <g>
+      <text x="786" y="736" fill="#6c8b7b" font-size="15" font-weight="700" letter-spacing="1.7">CONTROLE</text>
+      <text x="786" y="774" fill="#193c30" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">Metas, dívidas e privacidade</text>
+      <text x="786" y="811" fill="#52655c" font-size="18">Orçamento, perfil, exportação, exclusão</text>
+      <text x="786" y="839" fill="#52655c" font-size="18">da conta e acabamento responsivo.</text>
+    </g>
+  </g>
+
+  <rect x="78" y="920" width="1244" height="116" rx="22" fill="#1f5141"/>
+  <text x="112" y="965" fill="#a9d0bb" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.8">PRÓXIMAS VALIDAÇÕES EXTERNAS</text>
+  <text x="112" y="1002" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19">Conexão bancária real com Pluggy e avaliação do assistente com o provedor de IA.</text>
+</svg>

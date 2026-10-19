@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="390" y2="844" gradientUnits="userSpaceOnUse"><stop stop-color="#F2F7F3"/><stop offset="1" stop-color="#E6EFE9"/></linearGradient>
+    <linearGradient id="hero" x1="38" y1="118" x2="350" y2="354" gradientUnits="userSpaceOnUse"><stop stop-color="#194E3E"/><stop offset="1" stop-color="#286B53"/></linearGradient>
+    <filter id="shadow" x="15" y="100" width="360" height="280" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#284C3D" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg)"/>
+  <rect x="0" y="0" width="390" height="844" fill="#F0F5F1"/>
+  <text x="25" y="24" fill="#183C31" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700">9:41</text>
+  <path d="M318 18h17M320 14v8M324 12v10M328 10v12" stroke="#294B3D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M344 15.5c4.4-4.2 10.5-4.2 15 0M347 18.5c2.7-2.5 6.5-2.5 9 0M351 21.5c.8-.7 1.9-.7 2.7 0" stroke="#294B3D" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="364" y="12" width="17" height="10" rx="3" stroke="#294B3D" stroke-width="1.4"/><rect x="366" y="14" width="11" height="6" rx="1.5" fill="#294B3D"/><path d="M383 15v4" stroke="#294B3D" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="24" y="63" fill="#183C31" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="23" font-weight="700" letter-spacing="-.6">Bom dia</text>
+  <text x="24" y="84" fill="#71847A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12">Seu dinheiro, em perspectiva.</text>
+  <circle cx="352" cy="61" r="20" fill="#DCE9E0"/><path d="M346 63c0-4 2.3-6.5 6-6.5s6 2.5 6 6.5v3l2 2h-16l2-2v-3Z" stroke="#315A48" stroke-width="1.5" stroke-linejoin="round"/><path d="M350 72c.5 1 1.2 1.5 2.2 1.5s1.7-.5 2.2-1.5" stroke="#315A48" stroke-width="1.5" stroke-linecap="round"/><circle cx="365" cy="47" r="4" fill="#D88B63" stroke="#F0F5F1" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <rect x="20" y="105" width="350" height="250" rx="26" fill="url(#hero)"/>
+  </g>
+  <circle cx="330" cy="150" r="57" fill="#FFFFFF" fill-opacity=".04"/><circle cx="330" cy="150" r="39" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <text x="44" y="141" fill="#C7DED0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="600">VOCÊ PODE GASTAR HOJE</text>
+  <text x="42" y="196" fill="#F8FBF8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="39" font-weight="650" letter-spacing="-1.4">R$ 184,50</text>
+  <text x="44" y="220" fill="#D3E5D9" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12">Um ritmo tranquilo para o mês.</text>
+  <rect x="42" y="244" width="306" height="1" fill="#FFFFFF" fill-opacity=".18"/>
+  <text x="44" y="268" fill="#D3E5D9" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">Disponível no mês</text>
+  <text x="345" y="268" text-anchor="end" fill="#F8FBF8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="600">R$ 4.522,00</text>
+  <text x="44" y="291" fill="#D3E5D9" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">Compromissos previstos</text>
+  <text x="345" y="291" text-anchor="end" fill="#F8FBF8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="600">− R$ 1.570,00</text>
+  <text x="44" y="323" fill="#B9D5C3" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10">Cálculo diário considera 16 dias restantes</text>
+  <path d="M335 317h12m-4-4 4 4-4 4" stroke="#D8E9DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="24" y="397" fill="#203F33" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17" font-weight="700">Próximos compromissos</text>
+  <text x="365" y="397" text-anchor="end" fill="#527867" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600">Ver todos</text>
+  <rect x="20" y="415" width="350" height="84" rx="18" fill="#FBFDFB" stroke="#E0EAE3"/>
+  <circle cx="56" cy="457" r="22" fill="#EAF1EB"/><path d="M49 448h14v18H49zM52 452h8M52 456h8M52 460h5" stroke="#557A65" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="91" y="448" fill="#233D32" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="650">Conta de energia</text>
+  <text x="91" y="469" fill="#84948A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">Vence amanhã · Recorrente</text>
+  <text x="348" y="458" text-anchor="end" fill="#294B3B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="650">R$ 126,80</text>
+  <rect x="20" y="510" width="350" height="84" rx="18" fill="#FBFDFB" stroke="#E0EAE3"/>
+  <circle cx="56" cy="552" r="22" fill="#F4EEE4"/><path d="M48 552h16M50 547h12v11H50zM53 544h6" stroke="#9A8059" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="91" y="543" fill="#233D32" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="650">Aluguel</text>
+  <text x="91" y="564" fill="#84948A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">10 jul. · Mensal</text>
+  <text x="348" y="553" text-anchor="end" fill="#294B3B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="650">R$ 1.420,00</text>
+  <rect x="20" y="613" width="350" height="96" rx="18" fill="#E5EEE7"/>
+  <circle cx="52" cy="647" r="16" fill="#D5E5D9"/><path d="M48 647h8M52 643v8" stroke="#426A54" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="78" y="641" fill="#294B3B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="650">Resumo do seu mês</text>
+  <text x="78" y="662" fill="#62786B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">Seus gastos estão dentro do ritmo previsto.</text>
+  <text x="78" y="680" fill="#62786B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">Confira como chegamos a este valor.</text>
+  <path d="M340 650h10m-4-4 4 4-4 4" stroke="#527867" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="20" y="730" width="350" height="1" fill="#D7E3DA"/>
+  <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" text-anchor="middle">
+    <path d="M30 758h18v14H30zM34 754h10v4" stroke="#3F7259" stroke-width="1.7" stroke-linejoin="round"/><text x="39" y="790" fill="#37664E" font-size="9" font-weight="650">Início</text>
+    <circle cx="117" cy="763" r="8" stroke="#89998F" stroke-width="1.5"/><path d="M117 759v5l4 2" stroke="#89998F" stroke-width="1.5" stroke-linecap="round"/><text x="117" y="790" fill="#87958C" font-size="9">Transações</text>
+    <path d="M185 770v-14l10-7 10 7v14h-7v-9h-6v9z" stroke="#89998F" stroke-width="1.5" stroke-linejoin="round"/><text x="195" y="790" fill="#87958C" font-size="9">Planejar</text>
+    <circle cx="273" cy="763" r="9" stroke="#89998F" stroke-width="1.5"/><path d="M268 764c2-5 8-5 10 0M270 769h6" stroke="#89998F" stroke-width="1.4" stroke-linecap="round"/><text x="273" y="790" fill="#87958C" font-size="9">Assistente</text>
+    <circle cx="351" cy="759" r="3.5" stroke="#89998F" stroke-width="1.4"/><path d="M343 772c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="#89998F" stroke-width="1.5" stroke-linecap="round"/><text x="351" y="790" fill="#87958C" font-size="9">Perfil</text>
+  </g>
+  <rect x="220" y="34" width="150" height="18" rx="9" fill="#DCE8DF"/><text x="295" y="46.5" text-anchor="middle" fill="#557363" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="8" font-weight="600" letter-spacing=".25">MOCKUP ILUSTRATIVO</text>
+</svg>

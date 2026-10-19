@@ -1,0 +1,1 @@
+{"version":3,"file":"transactionUpdateResponse.d.ts","sourceRoot":"","sources":["../../../src/generated/types/transactionUpdateResponse.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACH,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,eAAe,CAAC;AAEjD,MAAM,WAAW,yBAAyB;IACxC,IAAI,EAAE,WAAW,CAAC;IAClB,iBAAiB;IACjB,YAAY,EAAE,MAAM,CAAC;CACtB"}

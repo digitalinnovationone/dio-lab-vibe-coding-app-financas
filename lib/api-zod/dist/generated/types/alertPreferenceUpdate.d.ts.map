@@ -1,0 +1,1 @@
+{"version":3,"file":"alertPreferenceUpdate.d.ts","sourceRoot":"","sources":["../../../src/generated/types/alertPreferenceUpdate.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACH,OAAO,KAAK,EAAE,yBAAyB,EAAE,MAAM,6BAA6B,CAAC;AAE7E,MAAM,WAAW,qBAAqB;IACpC,IAAI,EAAE,yBAAyB,CAAC;IAChC,OAAO,EAAE,OAAO,CAAC;CAClB"}

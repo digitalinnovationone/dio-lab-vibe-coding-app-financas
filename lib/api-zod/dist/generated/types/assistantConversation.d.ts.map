@@ -1,0 +1,1 @@
+{"version":3,"file":"assistantConversation.d.ts","sourceRoot":"","sources":["../../../src/generated/types/assistantConversation.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACH,OAAO,KAAK,EAAE,oBAAoB,EAAE,MAAM,wBAAwB,CAAC;AAEnE,MAAM,WAAW,qBAAqB;IACpC,gBAAgB;IAChB,cAAc,EAAE,MAAM,GAAG,IAAI,CAAC;IAC9B,QAAQ,EAAE,oBAAoB,EAAE,CAAC;CAClC"}

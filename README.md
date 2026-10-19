@@ -1,6 +1,6 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# Finanças Pessoais com IA — projeto de Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+Este projeto explora como transformar uma necessidade cotidiana em um produto digital usando conversas com IA no Replit. A proposta é um app de finanças pessoais que ajuda a entender gastos e tomar decisões com mais clareza.
 
 ## ✨ O que é Vibe Coding
 
@@ -15,7 +15,7 @@ Problema: Muitas pessoas não conseguem manter um controle financeiro porque os 
 Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
 
 > [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+> O foco deste projeto é usar a IA como parceira de planejamento e desenvolvimento, trabalhando com requisitos claros, entregas incrementais e validação do resultado.
 
 ## 🪄 Etapas do Desafio
 
@@ -23,50 +23,22 @@ Precisamos de uma solução que permita **controlar as finanças por meio de uma
 
 Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
-
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
-
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
-
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
-
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
-
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
-
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+Um bom PRD descreve o problema, quem será beneficiado, as funcionalidades e os limites do produto. O prompt consolidado deste projeto está na seção [Prompt final (PRD)](#prompt-final-prd) e no arquivo [`docs/PROMPT.md`](docs/PROMPT.md).
 
 > [!TIP]
 > Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
 
-### 2. Explorando o Lovable na Prática
+### 2. Explorando o Replit na Prática
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Com o PRD pronto, use o Replit Agent para desenvolver o produto em etapas pequenas. Peça uma entrega por vez, informe como ela deve ser validada e compare o resultado com os requisitos antes de seguir:
+- Faça solicitações específicas, com critérios de aceite claros;
+- Valide cada etapa com testes e conferência visual;
+- Quando algo divergir da especificação, aponte o requisito exato e peça uma correção delimitada.
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Durante o processo, a IA pode ajudar a decompor requisitos, propor interfaces, implementar regras e criar testes. As decisões financeiras continuam apoiadas em regras explícitas e dados do próprio usuário.
 
 > [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+> O mais importante é transformar intenções em instruções claras e conferir o que a IA produziu, em vez de aceitar respostas sem validação.
 
 ### 3. Entregando o Desafio na DIO
 
@@ -83,6 +55,60 @@ No README do seu repositório, inclua:
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+
+## Conceito do app
+
+Finanças Pessoais é a proposta de um app web responsivo, pensado primeiro para celular, que reúne contas, cartões e transações em uma visão financeira única. A categorização automática reduz lançamentos manuais; a tela inicial ajuda a entender quanto ainda é possível gastar; e as áreas de planejamento organizam recorrências, parcelas, orçamento, metas e dívidas. Um assistente em linguagem natural responde perguntas usando os dados financeiros do próprio usuário. O produto não movimenta dinheiro, não oferece crédito e não recomenda investimentos.
+
+## Prompt final (PRD)
+
+O PRD completo está em [`docs/PROMPT.md`](docs/PROMPT.md). Ele consolida o problema, o público-alvo, a experiência desejada, as funcionalidades e os limites do app.
+
+## Histórico visual
+
+![Linha do tempo dos marcos do projeto](docs/media/historico-do-projeto.svg)
+
+*Resumo visual das etapas registradas durante o desenvolvimento; não é uma captura da conversa.*
+
+## Telas do app (mockups ilustrativos)
+
+Estas ilustrações representam as principais áreas do produto com conteúdo fictício. São mockups baseados no PRD, não capturas reais do aplicativo.
+
+<details>
+<summary>Início</summary>
+
+![Mockup ilustrativo da tela Início](docs/media/mockups/inicio.svg)
+
+</details>
+
+<details>
+<summary>Transações</summary>
+
+![Mockup ilustrativo da tela Transações](docs/media/mockups/transacoes.svg)
+
+</details>
+
+<details>
+<summary>Planejar</summary>
+
+![Mockup ilustrativo da tela Planejar](docs/media/mockups/planejar.svg)
+
+</details>
+
+<details>
+<summary>Assistente</summary>
+
+![Mockup ilustrativo da tela Assistente](docs/media/mockups/assistente.svg)
+
+</details>
+
+## Interações com o Replit
+
+Não havia capturas de tela ou gravações reais das conversas com o Replit nos arquivos disponíveis neste checkout. As telas acima são mockups identificados como ilustrações; as rotas públicas do build atual falharam na prévia estática, então não foram apresentadas como capturas reais.
+
+## Reflexão
+
+Aprendi que a qualidade do resultado depende de explicar o problema, o público e os limites antes de pedir a implementação. Dividir o trabalho em etapas e validar cada uma com critérios claros e testes ajuda a encontrar erros sem acumular mudanças. Também percebi que integrações externas precisam ser verificadas de ponta a ponta: uma funcionalidade pode estar implementada, mas ainda depender de permissões e autenticação corretas para ser publicada.
 
 ## 💬 Conclusão
 

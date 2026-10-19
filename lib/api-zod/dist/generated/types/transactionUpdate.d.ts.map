@@ -1,0 +1,1 @@
+{"version":3,"file":"transactionUpdate.d.ts","sourceRoot":"","sources":["../../../src/generated/types/transactionUpdate.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,MAAM,WAAW,iBAAiB;IAChC,UAAU,CAAC,EAAE,MAAM,CAAC;IACpB,UAAU,CAAC,EAAE,OAAO,CAAC;IACrB,gBAAgB;IAChB,KAAK,CAAC,EAAE,MAAM,GAAG,IAAI,CAAC;IACtB,cAAc,CAAC,EAAE,OAAO,CAAC;CAC1B"}
